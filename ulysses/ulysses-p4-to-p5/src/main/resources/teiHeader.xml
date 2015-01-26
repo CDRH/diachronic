@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+    <fileDesc>
+        <titleStmt>
+            <title>Ulysses. An electronic version of the critical and synoptic edition.</title>
+        </titleStmt>
+        <editionStmt>
+            <edition>Electronic version</edition>
+        </editionStmt>
+        <publicationStmt>
+            <p>This electronic edition was created as part of a <term>Diplomarbeit</term> for the<rs>Technische Universität München</rs>.
+                <emph>Note that the text and the edition are copyrighted and may not be distributed freely.</emph>
+                The copyright notices of the printed edition still apply where applicable:</p>
+            <p>Draft texts, revisional material, and reading text of <title>Ulysses</title> ©<date>1984</date>, The Trustees of the Estate of James Joyce</p>
+            <p>Presentation of Genetic Synopsis, Notes and Afterword ©<date>1984</date>, Hans Walter Gabler</p>
+            <p>The compiler of the electronic version, from his side, agrees to all non-commercial use of his work.</p>
+        </publicationStmt>
+        <notesStmt>
+            <note>This electronic edition was first automatically converted from the
+                TUSTEP files used for preparation of the printed edition; necessary corrections and additional tagging
+                were done by hand afterwards.</note>
+            <note>The electronic edition comprises the continuous manuscript text as on the left hand pages of the
+                printed edition (this also implies the reading text, as on the right hand pages), the emendatory
+                footnotes, the historical collation and the textual notes in the Appendix. The date information from
+                table 1 on page 1913 is also incorporated, so are some data from the bibliography relevant to the historical
+                collation. The preface, afterword, and the additional information in the bibliography and table 1 and 2 in
+                the appendix are not included.</note>
+        </notesStmt>
+        <sourceDesc>
+            <biblStruct xml:id="gab">
+                <monogr>
+                    <author>James Joyce</author>
+                    <editor role="editor">Hans Walter Gabler</editor>
+                    <title type="main">Ulysses</title>
+                    <title type="subordinate">A Critical and Synoptic Edition</title>
+                    <edition>Second Impression</edition>
+                    <imprint>
+                        <publisher>Garland Publishing Inc.</publisher>
+                        <pubPlace>New York</pubPlace>
+                        <pubPlace>London</pubPlace>
+                        <date>1986</date>
+                    </imprint>
+                </monogr>
+            </biblStruct>
+            <listWit>
+                <witness xml:id="e22">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>First edition</edition>
+                            <imprint>
+                                <publisher>Shakespeare and Company</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1922</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e26">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Second edition, set from the first</edition>
+                            <imprint>
+                                <publisher>Shakespeare and Company</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1926</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e32">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Fourth edition, set from the second</edition>
+                            <imprint>
+                                <publisher>The Odyssey Press</publisher>
+                                <pubPlace>Hamburg</pubPlace>
+                                <pubPlace>Paris</pubPlace>
+                                <pubPlace>Bologna</pubPlace>
+                                <date>1932</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e36">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Seventh edition (first impression), set from the fourth</edition>
+                            <imprint>
+                                <publisher>The Bodley Head</publisher>
+                                <pubPlace>London</pubPlace>
+                                <date>1936</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e37">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Seventh edition (second impression, with authorial corrections), set from the seventh (first impression)</edition>
+                            <imprint>
+                                <publisher>The Bodley Head</publisher>
+                                <pubPlace>London</pubPlace>
+                                <date>1937</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e60">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Eighth edition, set from the seventh (first impression)</edition>
+                            <imprint>
+                                <publisher>The Bodley Head</publisher>
+                                <pubPlace>London</pubPlace>
+                                <date>1960</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="e61">
+                    <biblStruct>
+                        <monogr>
+                            <author>James Joyce</author>
+                            <title>Ulysses</title>
+                            <edition>Ninth edition, set from the eighth</edition>
+                            <imprint>
+                                <publisher>Random House</publisher>
+                                <pubPlace>New York</pubPlace>
+                                <date>1961</date>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </witness>
+                <witness xml:id="LVL8.ROS" n="R"><date when="1918">fair copy (Rosenbach Manuscript)</date></witness>
+                <witness xml:id="LVL8.B" n="B"><date when="1918">final working draft revision</date> as typed beyond final working draft state represented in fair copy; lost</witness>
+                <witness xml:id="LVL8.C" n="C"><date when="1918">typescript overlay</date>, partially extant</witness>
+                <witness xml:id="LVL8.D" n="D"><date when="1921">typescript overlay</date></witness>
+                <witness xml:id="LVL8.1" n="1"><date from="1921-08-03" to="1921-08-27">proof</date></witness>
+                <witness xml:id="LVL8.2" n="2"><date from="1921-08-18" to="1921-09-17">proof</date></witness>
+                <witness xml:id="LVL8.3" n="3"><date from="1921-09-21" to="1921-10-05">proof</date></witness>
+                <witness xml:id="LVL8.4" n="4"><date from="1921-09-27" to="1921-10-08">proof</date></witness>
+                <witness xml:id="LVL8.5" n="5"><date from="1921-10-01" to="1921-10-12">proof</date></witness>
+                <witness xml:id="LVL8.6" n="6"><date from="1921-10-07" to="1921-10-12">proof</date></witness>
+                <witness xml:id="LVL8.7" n="7"><date when="1921-10-12">proof</date></witness>
+                <witness xml:id="LVL8.8" n="8"><date when="1922-02-02">first edition</date></witness>
+                <witness xml:id="LVL.GAB"><date when="1986">the reading text of the Gabler Edition</date></witness>
+            </listWit>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <projectDesc>
+            <p>This electronic edition was prepared as part of a computer science <term>Diplomarbeit</term> for the<rs>Technische Universität München</rs>.
+                It is an attempt to remodel the information structure of the printed Gabler edition of <title>Ulysses</title>
+                explicitly in SGML, as closely as possible to the TEI P3 standard.</p>
+            <p>With the time and resources given, the bulk of the SGML text files had to be generated automatically from
+                the electronic documents used in the preparation of the printed edition. This hopefully gives a very
+                correct text, but in many places gives crude and/or bad tagging.</p>
+            <p>The tagging applied shall serve two main purposes: To generate a TEI-compatible version of some
+                particular level of the text, notably the reading text as established by the Gabler edition, and to
+                create an online critical edition that allows more intuitive access to the information structures
+                available in the Gabler edition.</p>
+        </projectDesc>
+        <editorialDecl>
+            <quotation form="data" marks="all">
+                <p>Quotations are not tagged explicitly. Direct speech in the main text is marked exclusively with em
+                    dashes at the beginning of a new paragraph. What graphically looks like left and right single quotes
+                    in the main text are apostrophes and left single quotes used in contracted Irish names as <q>M‘Coy</q>
+                    and in similar forms of transcription (e.g. from Hebrew). These are coded as entity references to
+                    the standard ISO entities apos and lsquo. Quotations in the notes use single or double quotes.
+                </p>
+            </quotation>
+            <hyphenation eol="none">
+                <p>End-of-line hyphenation and soft hyphens introduced for typographic reasons in the computer files for
+                    the printed edition is discarded or represented by soft hyphen entities (shy). Explicit hyphens in
+                    the text can be considered as hard hyphens in compound words. Hyphenation information related to
+                    Joyce's manuscripts that is provided explicitly in the printed edition is marked with word break
+                    tags (wbreak).</p>
+            </hyphenation>
+            <segmentation>
+                <p>The main text is separated in three divisions, representing the three parts of the book. Each part is
+                    subdivided into episodes, eighteen altogether. The episodes 7 (Aeolus), 10 (Wandering Rocks) and
+                    17 (Ithaca) are again subdivided into their obvious elements.</p>
+            </segmentation>
+            <stdVals>
+                <p>Where dates are given as attribute values, they are either of the form <q>1904</q> to denote a whole
+                    year, or of the form <q>1904-06-16</q> to denote a particular day (the sixteenth of June 1904 in this case).
+                    There are <q>date</q> and <q>daterange</q> elements without content where the date ist to be derived
+                    from the attributes.</p>
+            </stdVals>
+        </editorialDecl>
+        <refsDecl>
+            <p>Two canonical reference systems are coded into the main text: There are the page and line-per-page
+                numbers of the left-hand pages (the synoptic pages) of the printed edition, which are coded with
+                <q>pb</q> and <q>lb</q> milestones with the <q>ed</q> attribute set to <q>syn</q> (for<q>synoptic</q>).
+                And there are the lines-per-chapter numbers serving as a standard reference to the reading text of the
+                Gabler edition, which are coded with <q>lb</q> tags with attribute <q>ed</q> set to <q>gab</q>
+                (for<q>Gabler</q>). To complete these references, one needs the chapter number given in the <q>n</q>
+                attribute of the episode level <q>div</q> elements.</p>
+            <p>It may be unfortunate, but there are also <q>lb</q> tags in the notes that are not part of a reference
+                system; they indicate a relevant line break in the source manuscript instead.</p>
+        </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+        <langUsage>
+            <language xml:id="ENG" ident="en">The main language of the text is English, although a lot of the words are
+                not  Standard English but new coinages that often also mimic other languages.
+                In the current version of the SGML transcription, no distinction of languages is made — all italics are
+                just tagged as highlighted.</language>
+        </langUsage>
+        <handNotes/>
+    </profileDesc>
+    <revisionDesc>
+        <change who="#rischer" when="1996-11-14">SGML version frozen from the last automatic conversion. Incomplete and faulty in details.</change>
+        <change who="#rischer" when="1996-11-28">Pushed and pulled through the needle's eye: it parses. Corrected some obvious conversion blunders, but not too systematically.</change>
+        <change who="#rischer" when="1997-02-01">I have remodelled the file structure for the appendix slightly and added the layout specs for
+                exceptional cases. I did a lot of manual editing at critical spots and have rerun the conversion for
+                systematic blunders. The whole thing is a lot better now, but still needs testing and improvement. The
+                tag set documentation is not completed.</change>
+    </revisionDesc>
+</teiHeader>

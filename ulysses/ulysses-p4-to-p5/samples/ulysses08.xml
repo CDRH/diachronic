@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 [
+<!ENTITY % intEntities SYSTEM "intEntities-unicode.dtf">
+%intEntities;
+<!ENTITY uly08 SYSTEM "uly08.xml">
+]>
+<TEI.2>
+<text lang="ENG">
+<body>
+<div type="part" org="uniform" sample="complete" part="N">
+<head TEIform="head"><num value="2" TEIform="num">II</num></head>
+&uly08;
+</div>
+</body>
+</text>
+</TEI.2>
+
