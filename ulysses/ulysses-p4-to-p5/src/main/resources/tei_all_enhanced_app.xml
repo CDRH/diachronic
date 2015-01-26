@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI with maximal setup</title>
+                <author>Sebastian Rahtz</author>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <schemaSpec ident="tei_all" start="TEI teiCorpus">
+                <moduleRef key="tei"/>
+                <!-- required -->
+                <moduleRef key="core"/>
+                <!-- required -->
+                <moduleRef key="analysis"/>
+                <moduleRef key="certainty"/>
+                <moduleRef key="corpus"/>
+                <moduleRef key="dictionaries"/>
+                <moduleRef key="drama"/>
+                <moduleRef key="figures"/>
+                <moduleRef key="gaiji"/>
+                <moduleRef key="header"/>
+                <!-- required -->
+                <moduleRef key="iso-fs"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="msdescription"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="nets"/>
+                <moduleRef key="spoken"/>
+                <moduleRef key="textcrit"/>
+                <moduleRef key="textstructure"/>
+                <!-- required -->
+                <moduleRef key="transcr"/>
+                <moduleRef key="verse"/>
+                <moduleRef key="tagdocs"/>
+            </schemaSpec>
+            <elementSpec ident="app" module="textcrit" mode="change">
+                <classes mode="change">
+                    <memberOf key="model.divLike"/>
+                    <memberOf key="model.pLike"/>
+                </classes>
+            </elementSpec>
+            <elementSpec ident="lem" module="textcrit" mode="change">
+                <content>
+                    <rng:zeroOrMore>
+                        <rng:choice>
+                            <rng:text/>
+                            <rng:ref name="model.divLike"/>
+                            <rng:ref name="model.divPart"/>
+                            <rng:ref name="model.gLike"/>
+                            <rng:ref name="model.phrase"/>
+                            <rng:ref name="model.inter"/>
+                            <rng:ref name="model.global"/>
+                            <rng:ref name="model.rdgPart"/>
+                        </rng:choice>
+                    </rng:zeroOrMore>
+                </content>
+            </elementSpec>
+            <elementSpec ident="rdg" module="textcrit" mode="change">
+                <content>
+                    <rng:zeroOrMore>
+                        <rng:choice>
+                            <rng:text/>
+                            <rng:ref name="model.divLike"/>
+                            <rng:ref name="model.divPart"/>
+                            <rng:ref name="model.gLike"/>
+                            <rng:ref name="model.phrase"/>
+                            <rng:ref name="model.inter"/>
+                            <rng:ref name="model.global"/>
+                            <rng:ref name="model.rdgPart"/>
+                        </rng:choice>
+                    </rng:zeroOrMore>
+                </content>
+            </elementSpec>
+        </body>
+    </text>
+</TEI>
