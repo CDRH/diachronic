@@ -38,7 +38,7 @@ public class WhitespaceNormalization extends Transformation {
         document.normalizeDocument();
         traverse(document, node -> {
             final boolean textElement = TEXT_ELEMENTS.contains(node.getNodeName());
-            final List<Node> textNodes = children(node).stream().filter(isOfType(Node.TEXT_NODE)).collect(Collectors.toList());
+            final List<Node> textNodes = children(node).filter(isOfType(Node.TEXT_NODE)).collect(Collectors.toList());
 
             final StringBuilder textContent = new StringBuilder();
             for (Node textNode : textNodes) {

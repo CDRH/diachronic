@@ -32,7 +32,7 @@ public class References extends Transformation {
     @Override
     public void transform(final Document document) throws Exception {
         traverse(document, node -> {
-            final Node wit = preceding(node).stream().filter(hasNodeName("wit")).findFirst().orElse(null);
+            final Node wit = preceding(node).filter(hasNodeName("wit")).findFirst().orElse(null);
             if (wit != null) {
                 final Element plref = (Element) node;
                 final Element ref = document.createElementNS(Converter.TEI_P5_NS, "ref");
@@ -56,7 +56,7 @@ public class References extends Transformation {
         }, IS_ELEMENT.and(hasNodeName("plref")));
 
         traverse(document, node -> {
-            final Node wit = preceding(node).stream().filter(hasNodeName("wit")).findFirst().orElse(null);
+            final Node wit = preceding(node).filter(hasNodeName("wit")).findFirst().orElse(null);
             if (wit != null) {
                 final Node preceding = precedingNode(node).get();
 

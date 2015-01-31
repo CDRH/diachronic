@@ -61,11 +61,11 @@ public class Breaks extends Transformation {
                 return node;
             }
 
-            final Node nextText = following(node).stream().filter(IS_TEXT_OR_MILESTONE).findFirst().orElse(null);
+            final Node nextText = following(node).filter(IS_TEXT_OR_MILESTONE).findFirst().orElse(null);
             if (nextText == null) {
                 return node;
             }
-            final Optional<Node> preceding = preceding(node).stream().filter(IS_TEXT_OR_MILESTONE.negate()).findFirst();
+            final Optional<Node> preceding = preceding(node).filter(IS_TEXT_OR_MILESTONE.negate()).findFirst();
             nextText.getParentNode().insertBefore(node, nextText);
             return preceding.orElse(following);
         }, IS_MILESTONE);

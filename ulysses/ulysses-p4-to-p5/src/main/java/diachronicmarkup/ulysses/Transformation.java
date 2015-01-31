@@ -26,12 +26,12 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import java.util.AbstractCollection;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * @author <a href="http://gregor.middell.net/" title="Homepage">Gregor Middell</a>
@@ -53,7 +53,7 @@ public abstract class Transformation {
     public static void traverse(Node node, Function<Node, Node> transformFunc, Predicate<Node> filter, Function<Node, Optional<Node>> successorFunc) {
         Optional<Node> next = Optional.ofNullable(node);
         while (next.isPresent()) {
-            next = axis(next.get(), successorFunc, false).stream().filter(filter).map(transformFunc).findFirst();
+            next = axis(next.get(), successorFunc, false).filter(filter).map(transformFunc).findFirst();
         }
     }
 
@@ -78,13 +78,7 @@ public abstract class Transformation {
         if (following != null) {
             return Optional.of(following);
         }
-        for (Node ancestor : ancestors(node)) {
-            following = ancestor.getNextSibling();
-            if (following != null) {
-                return Optional.of(following);
-            }
-        }
-        return Optional.empty();
+        return ancestors(node).map(Node::getNextSibling).filter(n -> n != null).findFirst();
     }
 
     public static Optional<Node> precedingNode(final Node node) {
@@ -99,47 +93,38 @@ public abstract class Transformation {
         }
     }
 
-    protected static Collection<Node> axis(Node node, Function<Node, Optional<Node>> successorFunc, boolean includeSelf) {
-        return new AbstractCollection<Node>() {
+    protected static Stream<Node> axis(Node node, Function<Node, Optional<Node>> successorFunc, boolean includeSelf) {
+        return StreamSupport.stream(((Iterable<Node>) () -> new Iterator<Node>() {
+            private Optional<Node> current = (includeSelf ? Optional.ofNullable(node) : successorFunc.apply(node));
+
             @Override
-            public Iterator<Node> iterator() {
-                return new Iterator<Node>() {
-                    private Optional<Node> current = (includeSelf ? Optional.ofNullable(node) : successorFunc.apply(node));
-
-                    @Override
-                    public boolean hasNext() {
-                        return current.isPresent();
-                    }
-
-                    @Override
-                    public Node next() {
-                        final Node next = current.get();
-                        current = successorFunc.apply(next);
-                        return next;
-                    }
-                };
+            public boolean hasNext() {
+                return current.isPresent();
             }
 
             @Override
-            public int size() {
-                return Integer.MAX_VALUE;
+            public Node next() {
+                final Node next = current.get();
+                current = successorFunc.apply(next);
+                return next;
             }
-        };
+        }).spliterator(), false);
     }
-    public static Collection<Node> following(final Node node) {
+
+    public static Stream<Node> following(final Node node) {
         return axis(node, Transformation::followingNode, false);
     }
 
-    public static Collection<Node> preceding(final Node node) {
+    public static Stream<Node> preceding(final Node node) {
         return axis(node, Transformation::precedingNode, false);
     }
 
-    public static Collection<Node> ancestors(final Node node) {
+    public static Stream<Node> ancestors(final Node node) {
         return axis(node, n -> Optional.ofNullable(n.getParentNode()), false);
     }
 
-    public static Collection<Node> children(final Node parent) {
-        return new AbstractCollection<Node>() {
+    public static Stream<Node> children(final Node parent) {
+        return StreamSupport.stream(new Iterable<Node>() {
 
             final NodeList children = parent.getChildNodes();
             final int length = children.getLength();
@@ -162,11 +147,7 @@ public abstract class Transformation {
                 };
             }
 
-            @Override
-            public int size() {
-                return length;
-            }
-        };
+        }.spliterator(), false);
     }
 
     public static Predicate<Node> isOfType(final short nodeType) {
@@ -179,10 +160,11 @@ public abstract class Transformation {
 
     public static Element elementPath(Node current, String... elementNames) {
         for (String elementName : elementNames) {
-            current = children(current).stream().filter(IS_ELEMENT.and(hasNodeName(elementName))).findFirst().orElse(null);
-            if (current == null) {
-                current = current.appendChild(doc(current).createElementNS(Converter.TEI_P5_NS, elementName));
-            }
+            final Node last = current;
+            current = children(last)
+                    .filter(IS_ELEMENT.and(hasNodeName(elementName)))
+                    .findFirst()
+                    .orElseGet(() -> last.appendChild(doc(last).createElementNS(Converter.TEI_P5_NS, elementName)));
         }
         return (Element) current;
     }

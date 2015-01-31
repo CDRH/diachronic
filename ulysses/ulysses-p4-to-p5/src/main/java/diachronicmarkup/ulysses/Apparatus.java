@@ -70,7 +70,7 @@ public class Apparatus extends Transformation {
             final Element app = (Element) node;
             app.removeAttribute("key");
 
-            final Element lem = (Element) children(app).stream().filter(IS_ELEMENT.and(hasNodeName("lem"))).findFirst().orElse(null);
+            final Element lem = (Element) children(app).filter(IS_ELEMENT.and(hasNodeName("lem"))).findFirst().orElse(null);
             if (lem == null) {
                 return app;
             }
@@ -107,7 +107,7 @@ public class Apparatus extends Transformation {
             return app;
         }, IS_ELEMENT.and(hasNodeName("app")));
 
-        following(document).stream()
+        following(document)
                 .filter(hasNodeName("back"))
                 .forEach(back -> traverse(back, node -> document.renameNode(node, Converter.TEI_P5_NS, "head"), hasNodeName("lem")));
     }

@@ -39,7 +39,7 @@ public class EditorialInterventions extends Transformation {
 
         traverse(document, node -> {
             Element overlay = (Element) node;
-            if (!children(node).stream().anyMatch(hasNodeName("del"))) {
+            if (!children(node).anyMatch(hasNodeName("del"))) {
                 final Optional<Node> precedingNode = precedingNode(overlay);
                 final Node parent = overlay.getParentNode();
                 for (Node child = overlay.getFirstChild(); child != null; child = overlay.getFirstChild()) {
@@ -53,7 +53,7 @@ public class EditorialInterventions extends Transformation {
                 return precedingNode.orElse(parent.removeChild(overlay));
             } else {
                 final Element subst = (Element) document.renameNode(overlay, Converter.TEI_P5_NS, "subst");
-                children(subst).stream().filter(IS_ELEMENT.and(hasNodeName("add"))).forEach(add -> ((Element) add).setAttribute("place", "overlay"));
+                children(subst).filter(IS_ELEMENT.and(hasNodeName("add"))).forEach(add -> ((Element) add).setAttribute("place", "overlay"));
                 return subst;
             }
         }, IS_ELEMENT.and(hasNodeName("overlay")));
