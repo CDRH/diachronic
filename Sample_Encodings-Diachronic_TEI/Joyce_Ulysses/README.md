@@ -3,6 +3,6 @@ Sample Encodings - Ulysses
 To generate a first data framework for a genetic TEI P5v3 representation of the legacy data of <i>Ulysses: A Critical and Synoptic Edition</i> (1st: 1984. 2nd: 1986) a migration script was written in Java by Gregor Middell. This script can be accessed, evaluated and modified in the folder "Migration_Ulysses-p4-to-p5"
 ----------------
 In the migration chain, which the Ulysses data underwent between 1986 and the present (TUSTEP Results --> SGML/TEI P3 --> TEI P4 --> TEI P5), various instances of migration loss corrupted the integrity of the data. Since there was no visualization software available for the data, the complex migration results could never be proofread against the initial print edition or the integrated text witnesses. Thus, the Java transformation script does not on itself produce a consistant digital version of the 1984/86 CSE Edition. 
-
+----------------
 Further proofreading and subsequent manual and automated corrections of the data had and still have to be applied to reconstruct the full information of the print edition. This complex and labour-demanding work has not been one of the main objectives of the DFG/NEH Project, that funded the generation of this data. Therefore, only fragments of the full data are finished for the time being. As a data sample to demonstrate the encoding decisions within the Joyce project, the eighth episode <i>Lestrygonians</i> is provided in the regarding folder.
 ----------------
