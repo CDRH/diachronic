@@ -1,0 +1,850 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Sketch of the Past - Segment 5</title>
+                <editor xml:id="lwoolf">Leonard Woolf</editor>
+                <author xml:id="vwoolf">Virginia Woolf</author>
+                <editor xml:id="hwg">Hans Walter Gabler</editor>
+                <editor xml:id="vz">Volker Zapf</editor>
+                <editor xml:id="js">Joshua Schäuble</editor>
+            </titleStmt>
+            <publicationStmt>
+                <p>Previously Unpublished.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Woolf, Virginia. “A Sketch of the Past (TS.A.5.a,1-69).” 1939-41. Monks House Papers, University of Sussex, Sussex.</p>
+                <p>Woolf, Virginia. “A Sketch of the Past (MS.A.5.b-A.5.d): Reminiscences of Family and Childhood by Virginia Woolf.” 1939-41. Monks House Papers, University of Sussex, Sussex.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>This is a diachronic test encoding produced by Hans Walter Gabler, Volker Zapf and Joshua Schäuble in the course of the DFG/NEH funded project "Diachronic Markup and Presentation Practices for Text Editions in Digital Research Environments". Fruther documentation on this encoding can be found on the project GitHub.</p>
+        </encodingDesc>
+        <profileDesc>
+            <creation xml:id="vwHeader">
+                <listChange ordered="true">
+                    <change n="1" status="draft" xml:id="ms_layer_0" type="level">
+                        <label>MS 1</label>
+                        <desc>Manuscript: Currente Calamo Additions and Deletions</desc>
+                    </change>
+                    <change n="2" status="draft" xml:id="ms_layer_1" type="layer">
+                        <label>MS 2</label>
+                        <desc>Manuscript: Overlay Additions and Deletions</desc>
+                    </change>
+                    <change n="3" status="draft" xml:id="ms_to_ts_transcription" type="level">
+                        <label>MS to TS</label>
+                        <desc>Typescript: Deletions, Additions and Substitutions, that entered in the transcription process</desc>
+                    </change>
+                    <change n="4" status="draft" xml:id="ts_layer_1" type="layer">
+                        <label>TS 1</label>
+                        <desc>Typescript: Overlay Additions and Deletions</desc>
+                    </change>
+                </listChange>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surface lrx="4958" lry="6278" n="001" ulx="29" uly="37" xml:id="A5b-001">
+            <graphic height="6333px" url="facsimile/A5b-001.jpg" width="5026px"/>
+            <zone lrx="1864" lry="410" rotate="358" ulx="1191" uly="199">
+                <zone lrx="1850" lry="395" type="line" ulx="1206" uly="207" xml:id="seg5p01l01"/>
+            </zone>
+            <zone lrx="4589" lry="2157" rotate="358" ulx="1243" uly="444">
+                <zone lrx="4190" lry="649" rotate="0" type="line" ulx="1254" uly="459" xml:id="seg5p01l02"/>
+                <zone lrx="4065" lry="848" rotate="359" type="line" ulx="1293" uly="692" xml:id="seg5p01l03"/>
+                <zone lrx="4247" lry="1007" rotate="359" type="line" ulx="1305" uly="868" xml:id="seg5p01l04"/>
+                <zone lrx="4082" lry="1178" rotate="359" type="line" ulx="1350" uly="1027" xml:id="seg5p01l05"/>
+                <zone lrx="3673" lry="1398" rotate="358" type="line" ulx="1344" uly="1225" xml:id="seg5p01l06"/>
+                <zone lrx="4400" lry="1625" rotate="357" type="line" ulx="1401" uly="1469" xml:id="seg5p01l07"/>
+                <zone lrx="4269" lry="1768" rotate="357" type="line" ulx="1424" uly="1617" xml:id="seg5p01l08"/>
+                <zone lrx="4604" lry="1943" rotate="357" type="line" ulx="1401" uly="1787" xml:id="seg5p01l09"/>
+                <zone lrx="2039" lry="2142" rotate="357" type="line" ulx="1418" uly="1969" xml:id="seg5p01l10"/>
+            </zone>
+            <zone lrx="4641" lry="6133" rotate="357" ulx="1347" uly="2191">
+                <zone lrx="4028" lry="2364" rotate="357" type="line" ulx="1476" uly="2202" xml:id="seg5p01l11"/>
+                <zone lrx="4231" lry="2570" rotate="356" type="line" ulx="1477" uly="2408" xml:id="seg5p01l12"/>
+                <zone lrx="4321" lry="2752" rotate="356" type="line" ulx="1490" uly="2585" xml:id="seg5p01l13"/>
+                <zone lrx="4340" lry="2957" rotate="355" type="line" ulx="1504" uly="2804" xml:id="seg5p01l14"/>
+                <zone lrx="4684" lry="3150" rotate="355" type="line" ulx="1504" uly="2978" xml:id="seg5p01l15"/>
+                <zone lrx="4525" lry="3342" rotate="355" type="line" ulx="1544" uly="3156" xml:id="seg5p01l16"/>
+                <zone lrx="4496" lry="3509" rotate="355" type="line" ulx="1571" uly="3345" xml:id="seg5p01l17"/>
+                <zone lrx="4470" lry="3679" rotate="355" type="line" ulx="1611" uly="3520" xml:id="seg5p01l18"/>
+                <zone lrx="4713" lry="3850" rotate="355" type="line" ulx="1694" uly="3685" xml:id="seg5p01l19"/>
+                <zone lrx="4193" lry="4065" rotate="355" type="line" ulx="1743" uly="3871" xml:id="seg5p01l20"/>
+                <zone lrx="4339" lry="4276" rotate="355" type="line" ulx="1688" uly="4091" xml:id="seg5p01l21"/>
+                <zone lrx="4075" lry="4472" rotate="354" type="line" ulx="1673" uly="4304" xml:id="seg5p01l22"/>
+                <zone lrx="4622" lry="4635" rotate="354" type="line" ulx="1667" uly="4480" xml:id="seg5p01l23"/>
+                <zone lrx="4532" lry="4808" rotate="354" type="line" ulx="1686" uly="4654" xml:id="seg5p01l24"/>
+                <zone lrx="4341" lry="5005" rotate="354" type="line" ulx="1675" uly="4840" xml:id="seg5p01l25"/>
+                <zone lrx="4199" lry="5213" rotate="352" type="line" ulx="1708" uly="5070" xml:id="seg5p01l26"/>
+                <zone lrx="4177" lry="5388" rotate="352" type="line" ulx="1675" uly="5234" xml:id="seg5p01l27"/>
+                <zone lrx="4265" lry="5618" rotate="351" type="line" ulx="1697" uly="5442" xml:id="seg5p01l28"/>
+                <zone lrx="4300" lry="5802" rotate="351" type="line" ulx="1769" uly="5618" xml:id="seg5p01l29"/>
+                <zone lrx="4413" lry="5931" rotate="352" type="line" ulx="1798" uly="5783" xml:id="seg5p01l30"/>
+                <zone lrx="4423" lry="6103" rotate="352" type="line" ulx="1812" uly="5922" xml:id="seg5p01l31"/>
+            </zone>
+        </surface>
+        <surface lrx="4957" lry="6321" n="002" ulx="60" uly="40" xml:id="A5b-002">
+            <graphic height="6333px" url="facsimile/A5b-002.jpg" width="5026px"/>
+            <zone lrx="4735" lry="6009" rotate="358" ulx="1198" uly="223">
+                <zone lrx="4606" lry="368" rotate="359" type="line" ulx="1197" uly="205" xml:id="seg5p02l01"/>
+                <zone lrx="4725" lry="552" rotate="358" type="line" ulx="1210" uly="401" xml:id="seg5p02l02"/>
+                <zone lrx="4210" lry="724" rotate="358" type="line" ulx="1273" uly="557" xml:id="seg5p02l03"/>
+                <zone lrx="4221" lry="896" rotate="357" type="line" ulx="1324" uly="745" xml:id="seg5p02l04"/>
+                <zone lrx="4131" lry="1069" rotate="356" type="line" ulx="1292" uly="932" xml:id="seg5p02l05"/>
+                <zone lrx="3971" lry="1213" rotate="356" type="line" ulx="1379" uly="1076" xml:id="seg5p02l06"/>
+                <zone lrx="4126" lry="1381" rotate="356" type="line" ulx="1398" uly="1264" xml:id="seg5p02l07"/>
+                <zone lrx="4009" lry="1539" rotate="356" type="line" ulx="1409" uly="1385" xml:id="seg5p02l08"/>
+                <zone lrx="4001" lry="1687" rotate="356" type="line" ulx="1398" uly="1549" xml:id="seg5p02l09"/>
+                <zone lrx="4668" lry="1833" rotate="356" type="line" ulx="1410" uly="1684" xml:id="seg5p02l10"/>
+                <zone lrx="4126" lry="2027" rotate="355" type="line" ulx="1403" uly="1873" xml:id="seg5p02l11"/>
+                <zone lrx="4635" lry="2205" rotate="355" type="line" ulx="1395" uly="2054" xml:id="seg5p02l12"/>
+                <zone lrx="4095" lry="2378" rotate="354" type="line" ulx="1427" uly="2239" xml:id="seg5p02l13"/>
+                <zone lrx="4649" lry="2561" rotate="353" type="line" ulx="1476" uly="2425" xml:id="seg5p02l14"/>
+                <zone lrx="4162" lry="2693" rotate="354" type="line" ulx="1488" uly="2559" xml:id="seg5p02l15"/>
+                <zone lrx="4669" lry="2887" rotate="353" type="line" ulx="1486" uly="2747" xml:id="seg5p02l16"/>
+                <zone lrx="4410" lry="3059" rotate="353" type="line" ulx="1546" uly="2907" xml:id="seg5p02l17"/>
+                <zone lrx="4406" lry="3230" rotate="353" type="line" ulx="1470" uly="3052" xml:id="seg5p02l18"/>
+                <zone lrx="3982" lry="3396" rotate="353" type="line" ulx="1508" uly="3241" xml:id="seg5p02l19"/>
+                <zone lrx="4742" lry="3540" rotate="353" type="line" ulx="1556" uly="3368" xml:id="seg5p02l20"/>
+                <zone lrx="4388" lry="3703" rotate="353" type="line" ulx="1539" uly="3569" xml:id="seg5p02l21"/>
+                <zone lrx="4171" lry="3859" rotate="353" type="line" ulx="1637" uly="3699" xml:id="seg5p02l22">
+                    <zone lrx="3671" lry="3598" rotate="354" type="addition" ulx="3184" uly="3496" xml:id="seg5p02l22add01"/>
+                </zone>
+                <zone lrx="4680" lry="4034" rotate="352" type="line" ulx="1673" uly="3904" xml:id="seg5p02l23"/>
+                <zone lrx="4781" lry="4223" rotate="352" type="line" ulx="1609" uly="4065" xml:id="seg5p02l24">
+                    <zone lrx="2715" lry="4032" rotate="350" type="addition" ulx="2346" uly="3927" xml:id="seg5p02l24add01"/>
+                </zone>
+                <zone lrx="4657" lry="4395" rotate="351" type="line" ulx="1623" uly="4250" xml:id="seg5p02l25"/>
+                <zone lrx="4236" lry="4550" rotate="351" type="line" ulx="1669" uly="4400" xml:id="seg5p02l26"/>
+                <zone lrx="4182" lry="4693" rotate="351" type="line" ulx="1672" uly="4563" xml:id="seg5p02l27"/>
+                <zone lrx="4096" lry="4852" rotate="350" type="line" ulx="1731" uly="4717" xml:id="seg5p02l28"/>
+                <zone lrx="4193" lry="4995" rotate="350" type="line" ulx="1761" uly="4865" xml:id="seg5p02l29"/>
+                <zone lrx="4420" lry="5168" rotate="350" type="line" ulx="1777" uly="5053" xml:id="seg5p02l30"/>
+                <zone lrx="4196" lry="5326" rotate="350" type="line" ulx="1825" uly="5185" xml:id="seg5p02l31"/>
+                <zone lrx="4443" lry="5499" rotate="349" type="line" ulx="1822" uly="5364" xml:id="seg5p02l32"/>
+                <zone lrx="4227" lry="5649" rotate="349" type="line" ulx="1883" uly="5506" xml:id="seg5p02l33"/>
+                <zone lrx="4573" lry="5854" rotate="348" type="line" ulx="1863" uly="5708" xml:id="seg5p02l34"/>
+                <zone lrx="4475" lry="6028" rotate="348" type="line" ulx="1868" uly="5862" xml:id="seg5p02l35"/>
+            </zone>
+        </surface>
+        <surface lrx="4934" lry="6271" n="003" ulx="22" uly="15" xml:id="A5b-003">
+            <graphic height="6333px" url="facsimile/A5b-003.jpg" width="5026px"/>
+            <!--this paragraph zone cannot stay rectangular, the rectangle is not detailed enough #JS-->
+            <zone lrx="4638" lry="4941" rotate="351" ulx="977" uly="288">
+                <zone lrx="4282" lry="372" rotate="358" ulx="1153" uly="209" xml:id="seg5p03l01"/>
+                <zone lrx="4242" lry="545" rotate="358" ulx="1183" uly="390" xml:id="seg5p03l02"/>
+                <zone lrx="4071" lry="729" rotate="357" ulx="1259" uly="591" xml:id="seg5p03l03"/>
+                <zone lrx="4022" lry="877" rotate="357" ulx="1264" uly="746" xml:id="seg5p03l04"/>
+                <zone lrx="4572" lry="1075" rotate="356" ulx="1284" uly="928" xml:id="seg5p03l05"/>
+                <zone lrx="4061" lry="1233" rotate="356" ulx="1343" uly="1098" xml:id="seg5p03l06"/>
+                <zone lrx="4690" lry="1399" rotate="356" ulx="1315" uly="1248" xml:id="seg5p03l07"/>
+                <zone lrx="4227" lry="1561" rotate="355" ulx="1355" uly="1426" xml:id="seg5p03l08"/>
+                <zone lrx="3883" lry="1739" rotate="355" ulx="1331" uly="1600" xml:id="seg5p03l09"/>
+                <zone lrx="4792" lry="1921" rotate="354" ulx="1378" uly="1798" xml:id="seg5p03l00"/>
+                <zone lrx="4465" lry="2059" rotate="354" ulx="1430" uly="1940" xml:id="seg5p03l11"/>
+                <zone lrx="4492" lry="2210" rotate="354" ulx="1477" uly="2079" xml:id="seg5p03l12"/>
+                <zone lrx="4235" lry="2392" rotate="353" ulx="1505" uly="2245" xml:id="seg5p03l13"/>
+                <zone lrx="4472" lry="2582" rotate="352" ulx="1493" uly="2443" xml:id="seg5p03l14"/>
+                <zone lrx="4437" lry="2764" rotate="352" ulx="1489" uly="2625" xml:id="seg5p03l15"/>
+                <zone lrx="4069" lry="2918" rotate="351" ulx="1529" uly="2795" xml:id="seg5p03l16"/>
+                <zone lrx="4464" lry="3088" rotate="351" ulx="1600" uly="2917" xml:id="seg5p03l17"/>
+                <zone lrx="4144" lry="3222" rotate="351" ulx="1643" uly="3091" xml:id="seg5p03l18"/>
+                <zone lrx="4350" lry="3416" rotate="350" ulx="1624" uly="3261" xml:id="seg5p03l19"/>
+                <zone lrx="4220" lry="3582" rotate="350" ulx="1636" uly="3451" xml:id="seg5p03l20"/>
+                <zone lrx="4188" lry="3733" rotate="351" ulx="1592" uly="3586" xml:id="seg5p03l21"/>
+                <zone lrx="3815" lry="3958" rotate="350" ulx="1560" uly="3803" xml:id="seg5p03l22"/>
+                <zone lrx="4140" lry="4096" rotate="350" ulx="1612" uly="3953" xml:id="seg5p03l23"/>
+                <zone lrx="4171" lry="4255" rotate="350" ulx="1651" uly="4116" xml:id="seg5p03l24"/>
+                <zone lrx="4330" lry="4440" rotate="349" ulx="1671" uly="4321" xml:id="seg5p03l25"/>
+                <zone lrx="4587" lry="4579" rotate="350" ulx="1691" uly="4460" xml:id="seg5p03l26"/>
+                <zone lrx="4531" lry="4729" rotate="350" ulx="1730" uly="4602" xml:id="seg5p03l27"/>
+                <zone lrx="3495" lry="4887" rotate="350" ulx="1746" uly="4744" xml:id="seg5p03l28"/>
+            </zone>
+            <zone lrx="4582" lry="6215" rotate="350" ulx="1593" uly="4932">
+                <zone lrx="4562" lry="5064" rotate="350" ulx="1756" uly="4940" xml:id="seg5p03l29"/>
+                <zone lrx="4580" lry="5219" rotate="350" ulx="1798" uly="5074" xml:id="seg5p03l30"/>
+                <zone lrx="4510" lry="5384" rotate="350" ulx="1833" uly="5242" xml:id="seg5p03l31"/>
+                <zone lrx="4324" lry="5559" rotate="349" ulx="1826" uly="5435" xml:id="seg5p03l32"/>
+                <zone lrx="4521" lry="5724" rotate="350" ulx="1739" uly="5610" xml:id="seg5p03l33"/>
+                <zone lrx="4605" lry="5893" rotate="349" ulx="1777" uly="5758" xml:id="seg5p03l34"/>
+                <zone lrx="4637" lry="6043" rotate="349" ulx="1837" uly="5905" xml:id="seg5p03l35"/>
+                <zone lrx="2169" lry="6163" rotate="348" ulx="1932" uly="6056" xml:id="seg5p03l36"/>
+            </zone>
+        </surface>
+        <surface lrx="4964" lry="6278" n="004" ulx="37" uly="16" xml:id="A5b-004">
+            <graphic height="6333px" url="facsimile/A5b-004.jpg" width="5026px"/>
+            <!--this paragraph zone cannot stay rectangular #JS-->
+            <zone lrx="4409" lry="6478" rotate="355" ulx="1041" uly="187">
+                <zone lrx="4143" lry="346" rotate="358" ulx="1125" uly="202" xml:id="seg5p04l01"/>
+                <zone lrx="4363" lry="516" rotate="358" ulx="1174" uly="374" xml:id="seg5p04l02"/>
+                <zone lrx="3880" lry="660" rotate="358" ulx="1197" uly="543" xml:id="seg5p04l03"/>
+                <zone lrx="4385" lry="833" rotate="357" ulx="1243" uly="695" xml:id="seg5p04l04"/>
+                <zone lrx="4468" lry="967" rotate="357" ulx="1201" uly="864" xml:id="seg5p04l05"/>
+                <zone lrx="4112" lry="1139" rotate="356" ulx="1291" uly="991" xml:id="seg5p04l06"/>
+                <zone lrx="3909" lry="1282" rotate="356" ulx="1237" uly="1151" xml:id="seg5p04l07"/>
+                <zone lrx="3834" lry="1442" rotate="356" ulx="1212" uly="1300" xml:id="seg5p04l08"/>
+                <zone lrx="4206" lry="1597" rotate="356" ulx="1265" uly="1466" xml:id="seg5p04l09"/>
+                <zone lrx="4146" lry="1775" rotate="355" ulx="1301" uly="1629" xml:id="seg5p04l10"/>
+                <zone lrx="3647" lry="1909" rotate="355" ulx="1343" uly="1788" xml:id="seg5p04l11"/>
+                <zone lrx="3976" lry="2090" rotate="355" ulx="1371" uly="1930" xml:id="seg5p04l12"/>
+                <zone lrx="3930" lry="2271" rotate="354" ulx="1347" uly="2143" xml:id="seg5p04l13"/>
+                <zone lrx="3735" lry="2437" rotate="354" ulx="1371" uly="2306" xml:id="seg5p04l14"/>
+                <zone lrx="3743" lry="2568" rotate="355" ulx="1393" uly="2454" xml:id="seg5p04l15"/>
+                <zone lrx="3827" lry="2742" rotate="354" ulx="1449" uly="2600" xml:id="seg5p04l16"/>
+                <zone lrx="4323" lry="2884" rotate="354" ulx="1439" uly="2770" xml:id="seg5p04l17"/>
+                <zone lrx="4344" lry="3025" rotate="354" ulx="1456" uly="2908" xml:id="seg5p04l18"/>
+                <zone lrx="4355" lry="3207" rotate="353" ulx="1502" uly="3081" xml:id="seg5p04l19"/>
+                <zone lrx="4231" lry="3383" rotate="353" ulx="1485" uly="3237" xml:id="seg5p04l20"/>
+                <zone lrx="4497" lry="3535" rotate="353" ulx="1538" uly="3407" xml:id="seg5p04l21"/>
+                <zone lrx="4270" lry="3680" rotate="353" ulx="1541" uly="3552" xml:id="seg5p04l22"/>
+                <zone lrx="3863" lry="3868" rotate="352" ulx="1563" uly="3740" xml:id="seg5p04l23"/>
+                <zone lrx="3820" lry="4016" rotate="352" ulx="1566" uly="3899" xml:id="seg5p04l24"/>
+                <zone lrx="4157" lry="4159" rotate="352" ulx="1616" uly="4038" xml:id="seg5p04l25"/>
+                <zone lrx="4451" lry="4324" rotate="352" ulx="1637" uly="4186" xml:id="seg5p04l26"/>
+                <zone lrx="4220" lry="4498" rotate="352" ulx="1630" uly="4349" xml:id="seg5p04l27"/>
+                <zone lrx="4302" lry="4623" rotate="352" ulx="1651" uly="4509" xml:id="seg5p04l28"/>
+                <zone lrx="4609" lry="4788" rotate="352" ulx="1718" uly="4657" xml:id="seg5p04l29">
+                    <zone lrx="2946" lry="4644" rotate="351" ulx="2119" uly="4562" xml:id="seg5p04l29add01"/>
+                </zone>
+                <zone lrx="4511" lry="4934" rotate="352" ulx="1726" uly="4820" xml:id="seg5p04l30"/>
+                <zone lrx="4096" lry="5121" rotate="351" ulx="1665" uly="4990" xml:id="seg5p04l31"/>
+                <zone lrx="4182" lry="5252" rotate="352" ulx="1669" uly="5114" xml:id="seg5p04l32"/>
+                <zone lrx="4344" lry="5398" rotate="352" ulx="1704" uly="5291" xml:id="seg5p04l33"/>
+                <zone lrx="4451" lry="5551" rotate="352" ulx="1765" uly="5444" xml:id="seg5p04l34"/>
+                <zone lrx="4234" lry="5706" rotate="351" ulx="1803" uly="5599" xml:id="seg5p04l35"/>
+                <zone lrx="4801" lry="5855" rotate="351" ulx="1800" uly="5741" xml:id="seg5p04l36"/>
+                <zone lrx="4695" lry="6004" rotate="351" ulx="1807" uly="5876" xml:id="seg5p04l37"/>
+                <zone lrx="4494" lry="6138" rotate="351" ulx="1850" uly="6028" xml:id="seg5p04l38"/>
+                <zone lrx="4306" lry="6241" rotate="350" ulx="2328" uly="6113" xml:id="seg5p04l39"/>
+                <zone lrx="4649" lry="6245" rotate="351" ulx="3036" uly="6117" xml:id="seg5p04l40"/>
+                <zone lrx="4695" lry="6211" rotate="354" ulx="4014" uly="6088" xml:id="seg5p04l41"/>
+            </zone>
+        </surface>
+    </sourceDoc>
+    <text>
+        <body>
+            <pb ed="#ms" facs="#A5b-001" n="1"/>
+            <p>
+                <milestone ed="#ms" facs="#seg5p01l01" n="1" unit="lb" xml:id="d1e86"/>
+                <milestone ed="#ts" n="1" unit="lb"/>June 20th&#160;<add change="#ms_to_ts_transcription" evidence="collation">1939&#160;</add>
+            </p>
+            <p>
+                <milestone ed="#ms" facs="#seg5p01l02" n="2" unit="lb" xml:id="d1e96"/>
+                <milestone ed="#ts" n="2" unit="lb"/>I was thinking<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>as I crossed the&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>channel&#160;</del>
+                    <add>
+                        <del change="#ms_to_ts_transcription" evidence="document" resp="#vw" rendition="#overtypedWithX">Cahnell&#160;</del>Chanell&#160;</add>
+                </subst>last night
+                    <del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>
+                <milestone ed="#ts" n="3" unit="lb"/>of&#160;<milestone ed="#ms" facs="#seg5p01l03" n="3" unit="lb" xml:id="d1e130"/>Stella;&#160;<del change="#ms_to_ts_transcription" evidence="collation">thinking&#160;</del>in a&#160;<add change="#ms_to_ts_transcription" evidence="collation">very&#160;</add>jerky disconnected way<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                    <add>;&#160;</add>
+                </subst>with&#160;
+                <milestone ed="#ms" facs="#seg5p01l04" n="4" unit="lb" xml:id="d1e153"/>
+                <seg xml:id="transp_sg5_1" function="transposition" change="#ms_to_ts_transcription" n="1">the boat train arriving<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                        <del>,&#160;</del>
+                        <add>;&#160;</add>
+                    </subst>
+                </seg>
+                <seg xml:id="transp_sg5_2" function="transposition" change="#ms_to_ts_transcription" n="2">people <subst change="#ms_to_ts_transcription" evidence="collation">
+                        <del>talking loudly,&#160;</del>
+                        <add>
+                            <milestone ed="#ts" n="4" unit="lb"/>quarrelling outside the door;&#160;</add>
+                    </subst>
+                </seg>
+                <listTranspose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_2"/>
+                        <ptr target="#transp_sg5_1"/>
+                    </transpose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_4"/>
+                        <ptr target="#transp_sg5_3"/>
+                    </transpose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_6"/>
+                        <ptr target="#transp_sg5_5"/>
+                    </transpose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_8"/>
+                        <ptr target="#transp_sg5_7"/>
+                    </transpose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_10"/>
+                        <ptr target="#transp_sg5_11"/>
+                        <ptr target="#transp_sg5_9"/>
+                    </transpose>
+                    <transpose change="#ms_to_ts_transcription">
+                        <ptr target="#transp_sg5_13"/>
+                        <ptr target="#transp_sg5_12"/>
+                    </transpose>
+                </listTranspose>
+                <!--
+                <del change="#ms_to_ts_transcription" evidence="collation">people talking loudly, </del>-->chains&#160;<milestone ed="#ms" facs="#seg5p01l05" n="5" unit="lb" xml:id="d1e167"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>being dropped, and the screws&#160;<del change="#ms_layer_0">the&#160;</del>beginning,&#160;</del>
+                    <add>
+                        <milestone ed="#ts" n="5" unit="lb"/>clanking;&#160;</add>
+                </subst>and the&#160;<milestone ed="#ms" facs="#seg5p01l06" n="6" unit="lb" xml:id="d1e183"/>steamer&#160;
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>suddenly hooting.<space quantity="2" unit="chars"/>&#160;
+                        <del change="#ms_layer_0">Th<subst change="#ms_layer_0" resp="#vw">
+                                <del>i</del>
+                                <add>e</add>
+                            </subst>s<add change="#ms_layer_0" resp="#vw">e&#160;</add>
+                        </del>
+                    </del>
+                    <add>giving those sudden stertorous&#160;<milestone ed="#ts" n="6" unit="lb"/>snorts.&#160;</add>
+                </subst>And&#160;<milestone ed="#ms" facs="#seg5p01l07" n="7" unit="lb" xml:id="d1e209"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>as&#160;</del>
+                    <add>
+                        <subst change="#ms_to_ts_transcription" evidence="collation">
+                            <del>on&#160;</del>
+                            <add>as&#160;</add>
+                        </subst>
+                    &#160;</add>
+                </subst>the first morning after a broken night&#160;<milestone ed="#ts" n="7" unit="lb"/>is distracted&#160;
+                <milestone ed="#ms" facs="#seg5p01l08" n="8" unit="lb" xml:id="d1e234"/>instead of beginning Roger again<add resp="#vw" change="#ms_to_ts_transcription" evidence="collation">,&#160;</add>
+                <milestone ed="#ts" n="8" unit="lb"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>(as I ought)&#160;</del>
+                    <add>as I ought,&#160;</add>
+                </subst>I will&#160;<milestone ed="#ms" facs="#seg5p01l09" n="9" unit="lb" xml:id="d1e257"/>write&#160;<del change="#ms_layer_0">what&#160;</del>down some of my distracted and&#160;<milestone ed="#ts" n="9" unit="lb"/>disconnected&#160;<milestone ed="#ms" facs="#seg5p01l10" n="10" unit="lb" xml:id="d1e265"/>
+                thoughts<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>.&#160;</del>
+                    <add>; to serve, should the time come, for&#160;<milestone ed="#ts" n="10" unit="lb"/>notes.&#160;</add>
+                </subst>
+            </p>
+            <p>
+                <milestone ed="#ms" facs="#seg5p01l11" n="11" unit="lb" xml:id="d1e281"/>
+                <milestone ed="#ts" n="11" unit="lb"/>
+                <subst change="#ms_layer_0" resp="#vw">
+                    <del>And&#160;</del>
+                    <add change="#ms_layer_0">How&#160;</add>
+                </subst>many people are there&#160;<del change="#ms_layer_0">now&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>who could&#160;</del>
+                    <add>still able to&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p01l12" n="12" unit="lb" xml:id="d1e307"/>think about&#160;<milestone ed="#ts" n="12" unit="lb"/>Stella on the 20th June 1939?&#160;<milestone ed="#ms" facs="#seg5p01l13" n="13" unit="lb" xml:id="d1e311"/>Very few. Jack&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>is dead.&#160;</del>
+                    <add>died last&#160;<milestone ed="#ts" n="13" unit="lb"/>Christmas;&#160;</add>
+                </subst>George and Gerald&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>are dead.&#160;</del>
+                    <add>a year or two ago;&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p01l14" n="14" unit="lb" xml:id="d1e333"/>Kitty Maxse&#160;<milestone ed="#ts" n="14" unit="lb"/>and Margaret Massingberd have been dead&#160;<milestone ed="#ms" facs="#seg5p01l15" n="15" unit="lb" xml:id="d1e338"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>for many years.&#160;</del>
+                    <add>many years now.&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="15" unit="lb"/>Susan Lushington and&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>the Stillmans&#160;</del>
+                    <add>Lisa Stillman&#160;</add>
+                </subst>are&#160;<milestone ed="#ms" facs="#seg5p01l16" n="16" unit="lb" xml:id="d1e360"/>
+                <add change="#ms_to_ts_transcription" evidence="collation">still&#160;</add>alive<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>.&#160;</del>
+                    <add>;&#160;<milestone ed="#ts" n="16" unit="lb"/>but how they live and where I know not.&#160;</add>
+                </subst>
+                <del change="#ms_layer_0">Anyone&#160;</del>Perhaps&#160;<del change="#ms_layer_0" resp="#vw">my&#160;</del>
+                <add change="#ms_to_ts_transcription" evidence="collation">thus&#160;</add>
+                <milestone ed="#ts" n="17" unit="lb"/>I think of her less&#160;<milestone ed="#ms" facs="#seg5p01l17" n="17" unit="lb" xml:id="d1e385"/>disconnectedly and more truly than anyone&#160;<milestone ed="#ts" n="18" unit="lb"/>now&#160;<milestone ed="#ms" facs="#seg5p01l18" n="18" unit="lb" xml:id="d1e390"/>living, save&#160;<add>for&#160;</add>Vanessa and Adrian<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                    <add>;&#160;</add>
+                </subst>and perhaps old&#160;<milestone ed="#ms" facs="#seg5p01l19" n="19" unit="lb" xml:id="d1e404"/>
+                <milestone ed="#ts" n="19" unit="lb"/>Sophie Farrell.&#160;<del change="#ms_layer_0">She was the only daughter of the&#160;<milestone ed="#ms" facs="#seg5p01l20" n="20" unit="lb" xml:id="d1e411"/>handsome barrister Herbert Duckworth;&#160;</del>
+                <milestone ed="#ms" facs="#seg5p01l21" n="21" unit="lb" xml:id="d1e414"/>
+                <del change="#ms_layer_0">I&#160;</del>
+                <del change="#ms_layer_0">
+                    <subst change="#ms_layer_0" resp="#vw">
+                        <del>L&#160;</del>
+                        <add>But&#160;</add>
+                    </subst>
+                </del>Of her childhood I know practically&#160;<milestone ed="#ms" facs="#seg5p01l22" n="22" unit="lb" xml:id="d1e431"/>
+                <milestone ed="#ts" n="20" unit="lb"/>nothing. She was the only daughter of the&#160;<milestone ed="#ms" facs="#seg5p01l23" n="23" unit="lb" xml:id="d1e436"/>handsome barrister&#160;<milestone ed="#ts" n="21" unit="lb"/>Herbert Duckworth<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>; and&#160;</del>
+                    <add>, but as&#160;</add>
+                </subst>he died&#160;<milestone ed="#ms" facs="#seg5p01l24" n="24" unit="lb" xml:id="d1e449"/>when she was <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>3 or 4</del>
+                    <add>three or four</add>
+                </subst>.&#160;<del change="#ms_layer_0">She did not remember him:&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <milestone ed="#ms" facs="#seg5p01l25" n="25" unit="lb" xml:id="d1e458"/>
+                    <milestone ed="#ts" n="22" unit="lb"/>
+                    <del>She&#160;</del>
+                    <add>she&#160;</add>
+                </subst>did not remember him, or those years when&#160;<milestone ed="#ms" facs="#seg5p01l26" n="26" unit="lb" xml:id="d1e467"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>my&#160;</del>
+                    <add>her&#160;</add>
+                </subst>mother&#160;<milestone ed="#ts" n="23" unit="lb"/>was as happy as anyone can be.&#160;<milestone ed="#ms" facs="#seg5p01l27" n="27" unit="lb" xml:id="d1e481"/>I think, from stray&#160;<milestone ed="#ts" n="24" unit="lb"/>
+                anecdotes<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>
+                <del change="#ms_layer_0">that she&#160;</del>
+                and&#160;<milestone ed="#ms" facs="#seg5p01l28" n="28" unit="lb" xml:id="d1e497"/>from what I&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>observed&#160;</del>
+                    <add>noticed myself,&#160;</add>
+                </subst>that&#160;<add>when&#160;</add>she came&#160;<milestone ed="#ts" n="25" unit="lb"/>to&#160;<milestone ed="#ms" facs="#seg5p01l29" n="29" unit="lb" xml:id="d1e514"/>consciousness&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>when&#160;</del>
+                    <add>as a child&#160;</add>
+                </subst>the unhappy years were&#160;<milestone ed="#ms" facs="#seg5p01l30" n="30" unit="lb" xml:id="d1e525"/>at their&#160;<milestone ed="#ts" n="26" unit="lb"/>height.&#160;<add>That would account for some qualities in Stella.&#160;</add>
+                <milestone ed="#ts" n="27" unit="lb"/>Her first memories&#160;<del change="#ms_layer_1">of&#160;<milestone ed="#ms" facs="#seg5p01l31" n="31" unit="lb" xml:id="d1e537"/>her mother&#160;</del>were of a&#160;<add>very sad&#160;</add>
+                <subst change="#ms_layer_1" resp="#vw">
+                    <del>widow</del>
+                    <add change="#ms_layer_1">widowed mother</add>
+                </subst>,&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>going&#160;</del>
+                    <add>who&#160;<milestone ed="#ts" n="28" unit="lb"/>"went&#160;</add>
+                </subst>about&#160;<pb ed="#ms" facs="#A5b-002" n="2"/><milestone ed="#ms" facs="#seg5p02l01" n="1" unit="lb" xml:id="d1e566"/>doing good<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>, in&#160;</del>
+                    <add>" -- Stella wished to have that on the&#160;<milestone ed="#ts" n="29" unit="lb"/>tombstone -- visiting&#160;</add>
+                </subst>the slums, visiting&#160;<add>too&#160;</add>the Cancer&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>hospital&#160;</del>
+                    <add>Hospi-&#160;<milestone ed="#ts" n="30" unit="lb"/>tal&#160;</add>
+                </subst>in the Brompton&#160;<milestone ed="#ms" facs="#seg5p02l02" n="2 " unit="lb" xml:id="d1e594"/>Road.&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>(This I knew she did: one case she saw "shocked" her she&#160;<milestone ed="#ms" facs="#seg5p02l03" n="3" unit="lb" xml:id="d1e600"/>told our Quaker Aunt)&#160;</del>
+                    <add>Our Quaker Aunt told me that&#160;<milestone ed="#ts" n="1" unit="lb"/>2&#160;<milestone ed="#ts" n="2" unit="lb"/>this was her habit; for she said how one case there had&#160;<milestone ed="#ts" n="3" unit="lb"/>"shocked her".&#160;</add>
+                </subst>Thus Stella&#160;<del change="#ms_layer_0">grew up&#160;</del>as a&#160;<milestone ed="#ms" facs="#seg5p02l04" n="4" unit="lb" xml:id="d1e616"/>child&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>was&#160;</del>
+                    <add>lived&#160;</add>
+                </subst>in the shade of&#160;<milestone ed="#ts" n="4" unit="lb"/>that widowhood;&#160;<add change="#ms_to_ts_transcription" evidence="collation">saw that beautiful crape veiled figure daily;&#160;</add>
+                <milestone ed="#ts" n="5" unit="lb"/>and&#160;<milestone ed="#ms" facs="#seg5p02l05" n="5" unit="lb" xml:id="d1e635"/>perhaps&#160;<del change="#ms_to_ts_transcription" evidence="collation">then&#160;<del change="#ms_layer_0">rece&#160;</del>
+                    <del change="#ms_layer_0">ad</del>&#160;</del>took&#160;<add change="#ms_to_ts_transcription" evidence="collation">then&#160;</add>the ply&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>which&#160;</del>
+                    <add>that&#160;</add>
+                </subst>was so&#160;<milestone ed="#ms" facs="#seg5p02l06" n="6" unit="lb" xml:id="d1e659"/>marked --&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>a&#160;</del>
+                    <add>that&#160;<milestone ed="#ts" n="6" unit="lb"/>attitude of&#160;</add>
+                </subst>devotion, almost canine<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                    <add>&#160;in its touching adoration&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="7" unit="lb"/>to her&#160;<milestone ed="#ms" facs="#seg5p02l07" n="7" unit="lb" xml:id="d1e683"/>
+                mother<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>: a&#160;</del>
+                    <add>; that&#160;</add>
+                </subst>passive, suffering affection; and&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>a&#160;</del>
+                    <add>also&#160;<milestone ed="#ts" n="8" unit="lb"/>that&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l08" n="8" unit="lb" xml:id="d1e706"/>complete&#160;<del change="#ms_layer_0">dependance&#160;</del>unquestioning dependance.&#160;<milestone change="#ms_to_ts_transcription" type="closing_and_opening" unit="p"/>
+                <milestone ed="#ms" facs="#seg5p02l09" n="9" unit="lb" xml:id="d1e713"/>
+                <milestone ed="#ts" n="9" unit="lb"/>They were&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>
+                        <del change="#ms_layer_0">the&#160;</del>Sun&#160;</del>
+                    <add>sun&#160;</add>
+                </subst>and moon to each&#160;other<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>:&#160;</del>
+                    <add>;&#160;</add>
+                </subst>my&#160;<milestone ed="#ms" facs="#seg5p02l10" n="10" unit="lb" xml:id="d1e739"/>mother the&#160;<!---<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>definite and positive; </del>
+                    <add>positive <milestone ed="#ts" n="10" unit="lb"/>and definite; </add>
+                </subst>-->
+                <seg xml:id="transp_sg5_3" function="transposition" change="#ms_to_ts_transcription" n="1">definite</seg>
+                &#160;<milestone ed="#ts" n="10" unit="lb"/>and 
+                <seg xml:id="transp_sg5_4" function="transposition" change="#ms_to_ts_transcription" n="2">positive</seg>;
+                
+                Stella the reflecting<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>
+                and&#160;<milestone ed="#ms" facs="#seg5p02l11" n="11" unit="lb" xml:id="d1e761"/>satellite. My mother&#160;<milestone ed="#ts" n="11" unit="lb"/>was stern&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>with&#160;</del>
+                    <add>to&#160;</add>
+                </subst>her.&#160;<del change="#ms_layer_0">Once&#160;</del>
+                <milestone ed="#ms" facs="#seg5p02l12" n="12" unit="lb" xml:id="d1e778"/>All her devotion was given to George<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>who&#160;<milestone ed="#ts" n="12" unit="lb"/>was like&#160;<milestone ed="#ms" facs="#seg5p02l13" n="13" unit="lb" xml:id="d1e792"/>his father<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>:&#160;</del>
+                    <add>;&#160;</add>
+                </subst>and her care was for Gerald, born&#160;<milestone ed="#ms" facs="#seg5p02l14" n="14" unit="lb" xml:id="d1e803"/>post&#160;<milestone ed="#ts" n="13" unit="lb"/>umously and&#160;<add change="#ms_to_ts_transcription" evidence="collation">very&#160;</add>delicate. Stella she&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>snubbed --&#160;</del>
+                    <add>treated severely;&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="14" unit="lb"/>so&#160;<milestone ed="#ms" facs="#seg5p02l15" n="15" unit="lb" xml:id="d1e822"/>much so that before their marriage my father&#160;<milestone ed="#ms" facs="#seg5p02l16" n="16" unit="lb" xml:id="d1e824"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>protested.&#160;</del>
+                    <add>ventured&#160;<milestone ed="#ts" n="15" unit="lb"/>a protest.&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>And she&#160;</del>
+                    <add>She&#160;</add>
+                </subst>replied that it might be true<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>:&#160;</del>
+                    <add>;&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>it was&#160;</del>
+                    <add>she&#160;<milestone ed="#ms" facs="#seg5p02l17" n="17" unit="lb" xml:id="d1e856"/>was&#160;<subst change="#ts_layer_1" resp="#vw">
+                            <del>severe</del>
+                            <add change="#ts_layer_1">hard on Stella</add>
+                        </subst>,&#160;
+                    </add>
+                </subst>
+                <milestone ed="#ts" n="16" unit="lb"/>because she felt Stella&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>part of herself.&#160;</del>
+                    <add>"part of myself."&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l18" n="18" unit="lb" xml:id="d1e881"/>A pale silent&#160;<milestone ed="#ts" n="17" unit="lb"/>child<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>I imagine her; sensitive<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                    <add>;&#160;</add>
+                </subst>modest<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                    <add>;&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l19" n="19" unit="lb" xml:id="d1e913"/>uncomplaining;&#160;<del change="#ms_layer_0">She was not clever.&#160;</del>
+                <del change="#ms_to_ts_transcription" evidence="collation">very&#160;<milestone ed="#ms" facs="#seg5p02l20" n="20" unit="lb" xml:id="d1e920"/>domestic,&#160;</del>
+                <del change="#ms_layer_0">buried&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>caring only<del change="#ms_layer_0">, I think,&#160;</del>to help;&#160;<add change="#ms_layer_1">in the home;&#160;</add>
+                        <milestone ed="#ms" facs="#seg5p02l21" n="21" unit="lb" xml:id="d1e937"/>
+                        <del change="#ms_layer_1">so&#160;</del>completely unambitious, and yet so&#160;</del>
+                    <add>
+                        <milestone ed="#ts" n="18" unit="lb"/>adoring her mother, thinking only how she could help her, and&#160;<milestone ed="#ts" n="19" unit="lb"/>without any ambition or even character of her own. And yet&#160;<milestone ed="#ts" n="20" unit="lb"/>she had character. Very&#160;</add>
+                </subst>gentle,&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>- so&#160;</del>
+                    <add>very&#160;<del change="#ms_to_ts_transcription" resp="#vw" evidence="document" rendition="#overtypedWithX">modest,&#160;</del>
+                    </add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l22" n="22" unit="lb" xml:id="d1e965"/>honest,&#160;<milestone ed="#ts" n="21" unit="lb"/>and in some way&#160;<del change="#ms_to_ts_transcription ">so&#160;</del>
+                <add change="#ms_layer_1" facs="#seg5p02l22add01">individual&#160;</add>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>sensitive that&#160;</del>
+                    <add>-- so&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l23" n="23" unit="lb" xml:id="d1e982"/>she&#160;<del change="#ms_to_ts_transcription" evidence="collation">always&#160;</del>made her own impression&#160;<milestone ed="#ts" n="22" unit="lb"/>on people<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">.&#160;</add>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>--&#160;<milestone ed="#ms" facs="#seg5p02l24" n="24" unit="lb" xml:id="d1e1002"/>
+                        <del change="#ms_layer_0">was&#160;</del>
+                        <subst change="#ms_layer_1" resp="#vw">
+                            <del>had friends</del>
+                            <add change="#ms_layer_1" facs="#seg5p02l24add01">Her friends</add>
+                        </subst>,&#160;</del>
+                    <add>Friends,&#160;</add>
+                </subst>like Kitty&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>Lushington, who, much more&#160;<milestone ed="#ms" facs="#seg5p02l25" n="25" unit="lb" xml:id="d1e1025"/>brilliant,&#160;</del>
+                    <add>Maxse, the brilliant the spark<milestone ed="#ts" n="23" unit="lb"/>ling&#160;</add>
+                </subst>loved her with a real laughing tenderness&#160;<milestone ed="#ms" facs="#seg5p02l26" n="26" unit="lb" xml:id="d1e1038"/>for her own&#160;<milestone ed="#ts" n="24" unit="lb"/>sake.&#160;<del change="#ms_layer_0">The&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>This&#160;</del>
+                    <add>Her&#160;</add>
+                </subst>charm<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>, --&#160;</del>
+                    <add>&#160;was great;&#160;</add>
+                </subst>it&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>was&#160;</del>
+                    <add>came&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l27" n="27" unit="lb" xml:id="d1e1073"/>partly&#160;<add change="#ms_to_ts_transcription" evidence="collation">from this&#160;</add>
+                <milestone ed="#ts" n="25" unit="lb"/>modesty,&#160;<del change="#ms_to_ts_transcription" evidence="collation">partly&#160;</del>
+                <add change="#ms_to_ts_transcription" evidence="collation">from this&#160;</add>honesty,&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>partly&#160;<del change="#ms_layer_0">the&#160;</del>
+                        <milestone ed="#ms" facs="#seg5p02l28" n="28" unit="lb" xml:id="d1e1093"/>unselfishness, and&#160;</del>
+                    <add>from this perfectly simple&#160;<milestone ed="#ts" n="26" unit="lb"/>unostentatious unselfishness;&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>she was&#160;<del change="#ms_layer_0">naturally a&#160;</del>
+                        <milestone ed="#ms" facs="#seg5p02l29" n="29" unit="lb" xml:id="d1e1110"/>so naturally, not clever, not quick&#160;<del>~not&#160;</del>
+                        <milestone ed="#ms" facs="#seg5p02l30" n="30" unit="lb" xml:id="d1e1115"/>
+                        <del change="#ms_layer_0">sh&#160;</del>but as I should say, an artist -- that is&#160;<milestone ed="#ms" facs="#seg5p02l31" n="31" unit="lb" xml:id="d1e1121"/>without pose, or&#160;<del change="#ms_layer_0">h&#160;</del>snobbery: without any&#160;<milestone ed="#ms" facs="#seg5p02l32" n="32" unit="lb" xml:id="d1e1126"/>commonplaceness -- herself without effort --&#160;</del>
+                    <add>it came too from her&#160;<del change="#ts_layer_1">lac&#160;</del>
+                        <milestone ed="#ts" n="27" unit="lb"/>lack of pose, her lack of snobbery; and from the genuiness&#160;<milestone ed="#ts" n="28" unit="lb"/> from something that was -- could I put my finger on it --&#160;<milestone ed="#ts" n="29" unit="lb"/>perfectly herself, individual. This&#160;<sic>unannmed</sic>&#160;quality --&#160;<milestone ed="#ts" n="30" unit="lb"/>the sensitivness to real things&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l33" n="33" unit="lb" xml:id="d1e1144"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>this quality&#160;</del>
+                    <add>--&#160;</add>
+                </subst>was queer<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;in the sister&#160;<milestone ed="#ts" n="1" unit="lb"/>
+                <add resp="#vw" change="#ms_to_ts_transcription" evidence="collation">3&#160;</add>
+                <milestone ed="#ts" n="2" unit="lb"/>of&#160;<milestone ed="#ms" facs="#seg5p02l34" n="34" unit="lb" xml:id="d1e1172"/>George and Gerald, who were so&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>unmistakably&#160;</del>
+                    <add>opaque&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p02l35" n="35" unit="lb" xml:id="d1e1183"/>and&#160;
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>thoroughly Philistine.&#160;</del>
+                    <add>conventional;&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="3" unit="lb"/>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">who had so innate a respect for the conventions and&#160;<milestone ed="#ts" n="4" unit="lb"/>respectabilities. By some odd fling in her birth,&#160;<milestone ed="#ts" n="5" unit="lb"/>
+                </add>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>She&#160;</del>
+                    <add>she&#160;</add>
+                </subst>
+                had escaped&#160;<pb ed="#ms" facs="#A5b-003" n="3"/>
+                <milestone ed="#ms" facs="#seg5p03l01" n="1" unit="lb" xml:id="d1e1203"/>all taint of&#160;<del change="#ms_to_ts_transcription" evidence="collation">the&#160;</del>Duckworth&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>respectability.&#160;</del>
+                    <add>Philistinism.&#160;</add>
+                </subst>She had&#160;<milestone ed="#ts" n="6" unit="lb"/>none of their&#160;<milestone ed="#ms" facs="#seg5p03l02" n="2" unit="lb" xml:id="d1e1219"/>shrewd&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>commercial twinkle:&#160;</del>
+                    <add>middle class complacency.&#160;</add>
+                </subst>Instead of&#160;<milestone ed="#ts" n="7" unit="lb"/>their little brown&#160;
+                <milestone ed="#ms" facs="#seg5p03l03" n="3" unit="lb" xml:id="d1e1233"/>eyes&#160;
+                <del change="#ms_layer_0" resp="#vw">that were&#160;</del>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">that were so greedy and twinkling</add>
+                <del change="#ms_layer_0">she&#160;</del>
+                <!-- BEAUTIFULLY COMPLICATED SUBSTITUTION!-->
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>she had&#160;</del>
+                    <add>
+                        <milestone ed="#ts" n="8" unit="lb"/>hers were&#160;</add>
+                </subst>very large&#160;
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">and rather a pale&#160;</add>
+                blue<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">. They were</add>
+                
+                <!-- transpose this: -->
+                <seg xml:id="transp_sg5_5" function="transposition" change="#ms_to_ts_transcription" n="1">eyes<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">;</del>
+                </seg>
+                <milestone ed="#ms" facs="#seg5p03l04" n="4" unit="lb" xml:id="d1e1268"/>
+                <!-- with this: -->
+                <seg xml:id="transp_sg5_6" function="transposition" change="#ms_to_ts_transcription" n="2">dreamy<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;<milestone ed="#ts" n="9" unit="lb"/>candid</seg>.
+
+                <!-- ##OLD ENCODING AS PRODUCED FROM TUSTEP RESULTS
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>blue eyes; </del>
+                    <add>and rather a pale blue. They were </add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p03l04" n="4" unit="lb" xml:id="d1e1268"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>dreamy, candid . </del>
+                    <add>dreamy <milestone ed="#ts" n="9" unit="lb"/>candid eyes. </add>
+                </subst>-->
+                <del change="#ms_layer_0">And&#160;</del>She was without&#160;<del change="#ms_to_ts_transcription" evidence="collation">any of&#160;</del>their&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">instinctive&#160;</add>
+                <milestone ed="#ms" facs="#seg5p03l05" n="5" unit="lb" xml:id="d1e1290"/>worldliness.&#160;<milestone ed="#ts" n="10" unit="lb"/>She was lovely too, in a far vaguer&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">less perfect&#160;</add>way&#160;
+                <milestone ed="#ms" facs="#seg5p03l06" n="6" unit="lb" xml:id="d1e1298"/>than&#160;<milestone ed="#ts" n="11" unit="lb"/>my mother. She reminded me always of&#160;<milestone ed="#ms" facs="#seg5p03l07" n="7" unit="lb" xml:id="d1e1302"/>
+                <del change="#ms_layer_0">some white&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>one of&#160;these&#160;</del>
+                    <add>those&#160;</add>
+                </subst>large white flowers&#160;<milestone ed="#ts" n="12" unit="lb"/>-- elderblossom,&#160;<milestone ed="#ms" facs="#seg5p03l08" n="8" unit="lb" xml:id="d1e1319"/>cow parsley that one sees in the fields&#160;
+                <milestone ed="#ts" n="13" unit="lb"/>in June.&#160;<milestone ed="#ms" facs="#seg5p03l09" n="9" unit="lb" xml:id="d1e1323"/>
+                <del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">(</del>Perhaps&#160;
+                my mothers&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>name,&#160;</del>
+                    <add>laughing nickname&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>"</del>
+                    <add>--</add>
+                </subst>Old Cow<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>",-&#160;</del>
+                    <add>--&#160;</add>
+                </subst>
+                <milestone ed="#ms" facs="#seg5p03l10" n="10" unit="lb" xml:id="d1e1356"/>
+                <milestone ed="#ts" n="14" unit="lb"/>suggests the cow parsley<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>:)&#160;</del>
+                    <add>.&#160;</add>
+                </subst>
+                <del change="#ms_layer_0">but&#160;</del>
+                Or<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>again a white&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">faint&#160;</add>moon in&#160;<milestone ed="#ts" n="15" unit="lb"/>a&#160;<milestone ed="#ms" facs="#seg5p03l11" n="11" unit="lb" xml:id="d1e1387"/>
+                <del change="#ms_to_ts_transcription" evidence="collation">pale&#160;</del>blue sky suggests her. Or&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>these&#160;</del>
+                    <add>those&#160;</add>
+                </subst>large white roses&#160;<milestone ed="#ms" facs="#seg5p03l12" n="12" unit="lb" xml:id="d1e1402"/>that&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <milestone ed="#ts" n="16" unit="lb"/>have many petals and&#160;</add>are semi transparent. She had beautiful&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <milestone ed="#ts" n="17" unit="lb"/>fair&#160;</add>
+                <milestone ed="#ms" facs="#seg5p03l13" n="13" unit="lb" xml:id="d1e1414"/>hair, growing in horns over her forehead; and no&#160;<milestone ed="#ms" facs="#seg5p03l14" n="14" unit="lb" xml:id="d1e1416"/>colour&#160;<milestone ed="#ts" n="18" unit="lb"/>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">in her face&#160;</add>at all.&#160;<del change="#ms_layer_0">She was very&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>Probably she was&#160;<milestone ed="#ms" facs="#seg5p03l15" n="15" unit="lb" xml:id="d1e1431"/>taught at home by governesses; and&#160;</del>
+                    <add>As for teaching -- she had perhaps a&#160;<milestone ed="#ts" n="19" unit="lb"/>governess;&#160;</add>
+                </subst>went to classes<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>.&#160;</del>
+                    <add>;&#160;</add>
+                </subst>
+                <del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <milestone ed="#ms" facs="#seg5p03l16" n="16" unit="lb" xml:id="d1e1444"/>She played&#160;</del>
+                
+                <seg xml:id="transp_sg5_7" function="transposition" change="#ms_to_ts_transcription" n="1">the violin</seg><del 
+                    change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del> <seg xml:id="transp_sg5_8" 
+                        function="transposition" change="#ms_to_ts_transcription" n="2">was taught</seg>&#160;by Arnold&#160;<milestone 
+                            ed="#ms" facs="#seg5p03l17" n="17" unit="lb" xml:id="d1e1451"/>
+                <milestone ed="#ts" n="20" unit="lb"/>Dolmetch<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>;&#160;</del>
+                    <add>&#160;and&#160;</add>
+                </subst>played in Mrs&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>Marshall's&#160;</del>
+                    <add>Marshalls&#160;</add>
+                </subst>orchestra.&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">But&#160;
+                    <milestone ed="#ts" n="21" unit="lb"/>there was a stoppage in her mind, a gentle impassivity&#160;<milestone ed="#ts" n="22" unit="lb"/>about books and learning.&#160;</add>
+                <milestone ed="#ms" facs="#seg5p03l18" n="18" unit="lb" xml:id="d1e1481"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>But as&#160;</del>
+                    <add>As&#160;</add>
+                </subst>Jack told me after her death,&#160;<milestone ed="#ts" n="23" unit="lb"/>she&#160;<milestone ed="#ms" facs="#seg5p03l19" n="19" unit="lb" xml:id="d1e1495"/>thought herself so stupid as to be almost&#160;<milestone ed="#ms" facs="#seg5p03l20" n="20" unit="lb" xml:id="d1e1497"/>wanting;&#160;<milestone ed="#ts" n="24" unit="lb"/>and said that&#160;
+                    <del change="#ms_layer_0" resp="#vw">she&#160;</del>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">the&#160;</add>
+                rheumatic fever<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;<milestone ed="#ms" facs="#seg5p03l21" n="21" unit="lb" xml:id="d1e1514"/>which&#160;</del>
+                    she had as a child<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;
+                <milestone ed="#ts" n="25" unit="lb"/>had&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">(I remember the word)&#160;</add>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>"</del>
+                    <add>'</add>
+                </subst>touched<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>"</del>
+                    <add>'</add>
+                </subst>
+                her.&#160;<milestone ed="#ms" facs="#seg5p03l22" n="22" unit="lb" xml:id="d1e1545"/>But&#160;
+                    <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">again,&#160;</add>
+                <del change="#ms_layer_0" resp="#vw">what I am&#160;</del>
+                <milestone ed="#ts" n="26" unit="lb"/>what was remarkable<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;
+                <milestone ed="#ms" facs="#seg5p03l23" n="23" unit="lb" xml:id="d1e1568"/>considering the&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>minds of George and Gerald,&#160;</del>
+                    <add>Duckworth strain -- so&#160;<milestone ed="#ts" n="27" unit="lb"/>boorish, so rustic, so Philistine --&#160;</add>
+                </subst>is&#160;<milestone ed="#ms" facs="#seg5p03l24" n="24" unit="lb" xml:id="d1e1581"/>that however&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>unintellectual&#160;</del>
+                    <add>simple&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="28" unit="lb"/>she was<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">&#160;in brain</add>,&#160;she&#160;<milestone 
+                    ed="#ms" facs="#seg5p03l25" n="25" unit="lb" xml:id="d1e1604"/>was not<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;as&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>their&#160;</del>
+                    <add>Georges&#160;</add>
+                </subst>sister might&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">so&#160;</add>well&#160;<milestone ed="#ts" n="29" unit="lb"/>have been<del 
+                    change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;
+                <milestone ed="#ms" facs="#seg5p03l26" n="26" unit="lb" xml:id="d1e1639"/>
+                <del change="#ms_to_ts_transcription" evidence="collation">in the least&#160;</del>a&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>dull&#160;</del>
+                    <add>cheery&#160;</add>
+                </subst>ordinary&#160;<del change="#ms_layer_0">m.&#160;</del>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">English&#160;</add>upper middle class&#160;<milestone 
+                    ed="#ms" facs="#seg5p03l27" n="27" unit="lb" xml:id="d1e1660"/><milestone ed="#ts" n="30" unit="lb"/>girl<del 
+                    change="#ms_layer_0" resp="#vw" rendition="#multiline_vertical_strike">: She had great charm, great sensibility; and&#160;<milestone ed="#ms" facs="#seg5p03l28" n="28" unit="lb" xml:id="d1e1675"/>if she had lived, would have been <space quantity="0.3" unit="lines"/>&#160;</del>&#160;
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">&#160;with rosy cheeks and bright brown eyes.&#160;</add>
+                
+                <milestone ed="#ms" facs="#seg5p03l29" n="29" unit="lb" xml:id="d1e1682"/>
+                
+                    <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">She was&#160;<milestone ed="#ts" n="31" unit="lb"/>
+                        <del change="#ms_to_ts_transcription" evidence="document" resp="#vw" rendition="#overtypedWithX">distinct.&#160;</del>herself.&#160;</add>She remains quite distinct in my mind.&#160;<milestone ed="#ts" n="1" unit="lb"/>
+                <add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">4&#160;</add>
+                <milestone ed="#ts" n="2" unit="lb"/><del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">And,&#160;</del>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>what&#160;</del>
+                    <add>What&#160;</add>
+                </subst>is&#160;<milestone ed="#ms" facs="#seg5p03l30" n="30" unit="lb" xml:id="d1e1706"/>odd<del 
+                    change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;is that I cannot compare her<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>,&#160;</del>
+                        <add>&#160;either in character&#160;<milestone ed="#ts" n="3" unit="lb"/>or face&#160;</add>
+                </subst>with&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>anyone&#160;<milestone ed="#ms" facs="#seg5p03l31" n="31" unit="lb" xml:id="d1e1728"/>I have ever known.&#160;</del>
+                    <add>any one else.&#160;</add>
+                </subst>
+                
+                <!-- this is a rather experimental, but very interesting transposition. The encoding scheme is explained in a separate PDF. -->        
+                <!--TURQUISE:-->
+                <seg xml:id="transp_sg5_9" function="transposition" change="#ms_to_ts_transcription" n="1">I have never seen anyone&#160;<milestone ed="#ts" n="6" unit="lb"/>who&#160;<milestone ed="#ms" facs="#seg5p03l32" n="32" unit="lb" xml:id="d1e1742"/><del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">looked like her; or&#160;<del change="#ms_layer_0" resp="#vw">was</del></del>&#160;reminded me of her<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>.</del><add>;</add></subst></seg>
+                <!--GREY: -->
+                <seg xml:id="transp_sg5_10" function="transposition" change="#ms_to_ts_transcription" n="2"><milestone ed="#ms" facs="#seg5p03l33" n="33" unit="lb" xml:id="d1e1759"/>What&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>would she</del><add>she would</add></subst>&#160;have looked like&#160;<milestone ed="#ts" n="4" unit="lb"/>now</seg>
+                <!--GREEN: -->
+                <milestone ed="#ts" n="5" unit="lb"/><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del >-</del><add>or</add></subst>&#160;how&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>would&#160;<milestone ed="#ms" facs="#seg5p03l34" n="34" unit="lb" xml:id="d1e1764"/>she</del><add>she would</add></subst>&#160;have talked<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>,</del><add>.</add></subst>
+                <!--PURPLE:-->
+                <seg xml:id="transp_sg5_11" function="transposition" change="#ms_to_ts_transcription" n="3">in a room full of&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>many</del><add>other</add></subst>&#160;people<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">?</del>&#160;<milestone ed="#ms" facs="#seg5p03l35" n="35" unit="lb" xml:id="d1e1767"/>I cannot&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>see her,</del><add>imagine;</add></subst></seg>
+                <!--YELLOW: -->
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>or</del><add>and that is true too of</add></subst>&#160;my mother<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>,</del><add>.</add></subst>
+                <!-- BLUE_GREEN:-->
+                <milestone ed="#ts" n="7" unit="lb"/><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>in that way</del><add>They do not blend in the world of the living</add></subst>&#160;at&#160;<milestone ed="#ms" facs="#seg5p03l36" n="36" unit="lb" xml:id="d1e1780"/>all.
+                <!-- end of experimental transposition --> 
+            </p>
+            <pb ed="#ms" facs="#A5b-004" n="4"/>
+            <p>
+                <milestone ed="#ms" n="1" facs="#seg5p04l01" unit="lb" xml:id="d1e1788"/>
+                <milestone ed="#ts" n="8" unit="lb"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>As she&#160;</del>
+                    <add>She&#160;</add>
+                </subst>was&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>18&#160;</del>
+                    <add>nineteen&#160;</add>
+                </subst>when I was&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>6&#160;</del>
+                    <add>six&#160;</add>
+                </subst>or&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>7,&#160;</del>
+                    <add>seven;&#160;</add>
+                </subst><milestone ed="#ts" n="9" unit="lb"/>
+                <!-- Transposition Example 3, see external documentation -->
+                <!--GREEN-->
+                <seg xml:id="transp_sg5_12" function="transposition" change="#ms_to_ts_transcription" n="1">I used&#160;<milestone ed="#ts" n="10" unit="lb"/><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>sometimes</del><add>as a small child</add></subst>&#160;to be&#160;<milestone ed="#ms" n="2" facs="#seg5p04l02" unit="lb" xml:id="d1e1842"/>sent&#160;<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">out&#160;</del>with her<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">, as chaperone</add></seg>
+                <!--GREY--><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>;</del><add>,</add></subst><!--YELLOW-->
+                <seg xml:id="transp_sg5_13" function="transposition" change="#ms_to_ts_transcription" n="2"><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>for</del><add>and as</add></subst>&#160;a girl could&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>then not</del><add>not then</add></subst>&#160;go about&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">London&#160;</add>alone</seg>.
+                <!-- END OF EXAMPLE -->
+                <milestone ed="#ms" n="3" facs="#seg5p04l03" unit="lb" xml:id="d1e1851"/><subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>So among&#160;</del>
+                    <add>Among&#160;</add>
+                </subst>
+                <milestone ed="#ts" n="11" unit="lb"/>my earliest memories<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>
+                is the memory of&#160;<milestone ed="#ms" n="4" facs="#seg5p04l04" unit="lb" xml:id="d1e1870"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>trotting by her side when, I suppose, she was sent on errands;&#160;</del>
+                    <add>going out with her&#160;<milestone ed="#ts" n="12" unit="lb"/>perhaps to shop, or to pay some call;&#160;</add>
+                </subst>
+                <milestone ed="#ms" n="5" facs="#seg5p04l05" unit="lb" xml:id="d1e1883"/>and the errand&#160;done<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,</del>&#160;
+                <milestone ed="#ts" n="13" unit="lb"/>she would take me&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>into&#160;</del>
+                    <add>to&#160;</add>
+                </subst>a shop and give me&#160;<add change="#ms_to_ts_transcription" evidence="collation" resp="#vw">a glass of&#160;</add>
+                <milestone ed="#ms" n="6" facs="#seg5p04l06" unit="lb" xml:id="d1e1909"/>milk&#160;<milestone ed="#ts" n="14" unit="lb"/>and&#160;<del change="#ms_to_ts_transcription" evidence="collation">little&#160;</del>biscuits&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del><!-- TODO: encode as transposition!! -->with sugar sprinkled on them.&#160;</del>
+                    <add>sprinkled with sugar on a marble table.&#160;</add>
+                </subst>
+                <milestone ed="#ms" n="7" facs="#seg5p04l07" unit="lb" xml:id="d1e1926"/>
+                <milestone ed="#ts" n="15" unit="lb"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>I think&#160;</del>
+                    <add>And sometimes&#160;</add>
+                </subst>we went&#160;
+                <del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">about London &#160;</del>in hansoms<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">&#160;together</del>.&#160;
+                    
+                
+                <milestone ed="#ms" n="8" facs="#seg5p04l08" unit="lb" xml:id="d1e1948"/>
+                <del change="#ms_layer_0">But there were al&#160;</del>But she lived&#160;<add>of course&#160;</add>
+                <milestone ed="#ts" n="16" unit="lb"/>downstairs in the&#160;<milestone ed="#ms" n="9" facs="#seg5p04l09" unit="lb" xml:id="d1e1959"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>drawingroom;&#160;</del>
+                    <add>drawing room; pouring out tea;&#160;</add>
+                </subst>and there&#160;<milestone ed="#ts" n="17" unit="lb"/>were many young men, it seemed&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>to us,&#160;<milestone ed="#ms" n="10" facs="#seg5p04l10" unit="lb" xml:id="d1e1977"/>
+                        <del change="#ms_layer_0">in love&#160;</del>always&#160;</del>
+                    <add>when one dashed in for a&#160;<milestone ed="#ts" n="18" unit="lb"/>second, sitting&#160;</add>
+                </subst>round her. Vaguely we knew that&#160;<milestone ed="#ms" n="11" facs="#seg5p04l11" unit="lb" xml:id="d1e1989"/>Arthur Studd&#160;<milestone ed="#ts" n="19" unit="lb"/>was in love with her; and&#160;<milestone ed="#ms" n="12" facs="#seg5p04l12" unit="lb" xml:id="d1e1993"/>Ted Sanderson; and I think Richard&#160;<milestone ed="#ts" n="20" unit="lb"/>Norton; and&#160;<milestone ed="#ms" n="13" facs="#seg5p04l13" unit="lb" xml:id="d1e1997"/>
+                <del change="#ms_layer_0">of course J&#160;</del>Jim Stephen<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>&#160;-- He&#160;</del>
+                    <add>. That great figure with the&#160;<milestone ed="#ts" n="21" unit="lb"/>deep voice and the wild eyes&#160;</add>
+                </subst>would come&#160;<milestone ed="#ms" n="14" facs="#seg5p04l14" unit="lb" xml:id="d1e2014"/>
+                <del change="#ms_to_ts_transcription" evidence="collation">wild and mad&#160;</del>to the&#160;<milestone ed="#ts" n="22" unit="lb"/>house&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>in search of&#160;</del>
+                    <add>looking for&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>her;&#160;</del>
+                    <add>her, with his madness on him; and&#160;</add>
+                </subst>
+                <milestone ed="#ms" n="15" facs="#seg5p04l15" unit="lb" xml:id="d1e2040"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>rush up&#160;</del>
+                    <add>would&#160;<milestone ed="#ts" n="23" unit="lb"/>burst&#160;</add>
+                </subst>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>to</del>
+                    <add>into</add>
+                </subst>&#160;the nursery&#160;<subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>where we sat at&#160;<milestone ed="#ms" n="16" facs="#seg5p04l16" unit="lb" xml:id="d1e2066"/>breakfast, brandish&#160;</del>
+                    <add>and spear the bread on&#160;</add>
+                </subst>his sword stick<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">.&#160;</del>
+                <milestone ed="#ms" n="17" facs="#seg5p04l17" unit="lb" xml:id="d1e2077"/><milestone ed="#ts" n="24" unit="lb"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw"><del>We had mysterious orders&#160;</del><add>and&#160;</add></subst>at one time&#160;<add 
+                    change="#ms_to_ts_transcription" evidence="collation" resp="#vw">we were told&#160;</add>to go out&#160;
+                <milestone ed="#ms" n="18" facs="#seg5p04l18" unit="lb" xml:id="d1e2090"/>by the back&#160;
+                door<del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">,&#160;</del>and&#160;<milestone ed="#ts" n="25" unit="lb"/>if we met Jim we were to&#160;<milestone ed="#ms" n="19" facs="#seg5p04l19" unit="lb" xml:id="d1e2103"/>
+                <subst change="#ms_to_ts_transcription" evidence="collation" resp="#vw">
+                    <del>tell him&#160;</del>
+                    <add>say&#160;</add>
+                </subst>that Stella was away.
+                <milestone ed="#ts" n="000" unit="lb"/> [TYPESCRIPT ENDS. MANUSCRIPT ONLY CONTINUES] <del change="#ms_to_ts_transcription" evidence="collation" resp="#vw">Undoubtedly&#160;<milestone ed="#ms" n="20" facs="#seg5p04l20" unit="lb" xml:id="d1e2126"/>she must have been very attractive, taking my&#160;<milestone ed="#ms" n="21" facs="#seg5p04l21" unit="lb" xml:id="d1e2128"/>mother's place at her round tea table. She was&#160;<milestone ed="#ms" n="22" facs="#seg5p04l22" unit="lb" xml:id="d1e2130"/>
+                <del change="#ms_layer_0">always going out&#160;</del>often dining out, and dancing,&#160;<del change="#ms_layer_0">and&#160;</del>
+                <milestone ed="#ms" n="23" facs="#seg5p04l23" unit="lb" xml:id="d1e2139"/>there were her dance cards, the next day,&#160;<milestone ed="#ms" n="24" facs="#seg5p04l24" unit="lb" xml:id="d1e2141"/>with the pencil attached, and initials&#160;<milestone ed="#ms" n="25" facs="#seg5p04l25" unit="lb" xml:id="d1e2143"/>against all the dances, and sometimes a prize&#160;<milestone ed="#ms" n="26" facs="#seg5p04l26" unit="lb" xml:id="d1e2145"/>won at a cotillon. But&#160;<del change="#ms_layer_0">how&#160;</del>all the time,&#160;<milestone ed="#ms" n="27" unit="lb" facs="#seg5p04l27" xml:id="d1e2151"/>asked about as she was and admired and painted,&#160;<milestone ed="#ms" n="28" facs="#seg5p04l28" unit="lb" xml:id="d1e2153"/>there was&#160;<del change="#ms_layer_0">only&#160;</del>
+                <del change="#ms_layer_1">always&#160;</del>her doglike devotion to&#160;<milestone ed="#ms" n="29" facs="#seg5p04l29" unit="lb" xml:id="d1e2161"/>my mother:&#160;<add change="#ms_layer_1" facs="#seg5p04l29add01">remained anxious, always:&#160;</add>her perpetual worry about her health.&#160;<milestone ed="#ms" n="30" facs="#seg5p04l30" unit="lb" xml:id="d1e2167"/>A kind of fight went on between them --&#160;<del change="#ms_layer_0">how&#160;</del>
+                <milestone ed="#ms" n="31" facs="#seg5p04l31" unit="lb" xml:id="d1e2172"/>how to save my mother<add change="#ms_layer_0">;&#160;</add>
+                <del change="#ms_layer_0">from being overtired.&#160;</del>
+                <milestone ed="#ms" n="32" facs="#seg5p04l32" unit="lb" xml:id="d1e2180"/>how to help her. It was not foolish; for during&#160;<milestone ed="#ms" n="33" facs="#seg5p04l33" unit="lb" xml:id="d1e2183"/>those years, the strain must have been very great; and&#160;<milestone ed="#ms" n="34" facs="#seg5p04l34" unit="lb" xml:id="d1e2185"/>the illness from which she died, came no doubt&#160;<milestone ed="#ms" n="35" facs="#seg5p04l35" unit="lb" xml:id="d1e2187"/>from the incessant activity -- the perpetual&#160;<milestone ed="#ms" n="36" facs="#seg5p04l36" unit="lb" xml:id="d1e2189"/>nursing, looking after, doing too much. Stella must have&#160;<milestone ed="#ms" n="37" facs="#seg5p04l37" unit="lb" xml:id="d1e2191"/>
+                    <del change="#ms_layer_0">gues&#160;</del>feared what was the truth -- my mother was&#160;<milestone ed="#ms" n="38" facs="#seg5p04l38" unit="lb" xml:id="d1e2197"/>worn out, I daresay unnecessarily: so that when&#160;<milestone ed="#ms" n="39" facs="#seg5p04l39" unit="lb" xml:id="d1e2199"/>she fell ill, her heart failed~. This&#160;<milestone ed="#ms" n="40" facs="#seg5p04l40" unit="lb" xml:id="d1e2201"/>dread was always I think behind&#160;<milestone ed="#ms" n="41" facs="#seg5p04l41" unit="lb" xml:id="d1e2203"/>Stella's mind.</del></p>
+        </body>
+    </text>
+</TEI>
