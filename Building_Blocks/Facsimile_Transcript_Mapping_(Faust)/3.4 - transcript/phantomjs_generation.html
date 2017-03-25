@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="css/document-text.css">
+    <link rel="stylesheet" href="css/document-transcript.css">
+    <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
+    <link rel="stylesheet" href="css/document-transcript-interaction.css">
+    <link rel="stylesheet" href="css/pure-custom.css">
+    <link rel="stylesheet" href="css/basic_layout.css">
+
+    <script type="text/javascript" src="Y_extract.js"></script>
+    <script type="text/javascript" src="svg-utils.js"></script>
+    <script type="text/javascript" src="faust.js"></script>
+    <script type="text/javascript" src="materialunit.js"></script>
+    <script type="text/javascript" src="transcript-adhoc-tree.js"></script>
+    <script type="text/javascript" src="text-index.js"></script>
+    <script type="text/javascript" src="text-annotation.js"></script>
+    <script type="text/javascript" src="transcript.js"></script>
+    <script type="text/javascript" src="transcript-svg.js"></script>
+    <script type="text/javascript" src="adhoc-tree.js"></script>
+
+    <script type="text/javascript" src="transcript-configuration-faust.js"></script>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 5px;
+        background-color: lightgray;
+      }
+
+      #container {
+        border: 1px solid black;
+        background-color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    </div>
+  </body>
+  <script>
+
+    var createRenderContainer = (function() {
+
+      var createRenderContainer = function() {
+        var renderContainer = document.createElement("div");
+
+        renderContainer.style.height = "0px";
+        renderContainer.style.width = "0px";
+
+        renderContainer.style.overflow = "hidden";
+
+        renderContainer.style.position = "fixed";
+        renderContainer.style.top = "0px";
+        renderContainer.style.left = "0px";
+
+        return renderContainer;
+      };
+
+      return createRenderContainer;
+    })();
+
+    var createDiplomaticSvg = (function() {
+      "use strict";
+      var iterations = 15;
+      var timeout = 5;
+
+      var createDiplomaticSvg = function(diplomaticTranscript, callback) {
+        
+        var renderContainer = createRenderContainer();
+        document.body.appendChild(renderContainer);
+
+        var documentBuilder = new FaustTranscript.TranscriptAdhocTree();
+        var visComponent = documentBuilder.transcriptVC(diplomaticTranscript);
+
+        var svgRoot = document.createElementNS("http://www.w3.org/2000/svg", "svg")
+        svgRoot.setAttribute("class", "diplomatic");
+        renderContainer.appendChild(svgRoot);
+
+        var innerContainer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        innerContainer.setAttribute("id", "transcript_container");
+        visComponent.svgCont = innerContainer;
+        svgRoot.appendChild(innerContainer);
+
+        visComponent.render();
+
+        var computeLayout = function(currentIteration) {
+          visComponent.layout();
+          if(currentIteration < iterations) {
+            // push next layout computation to end of event queue
+            setTimeout( function() {
+              computeLayout(currentIteration + 1);
+            }, timeout);
+          } else {
+            var rootBBox = innerContainer.getBBox();
+            innerContainer.setAttribute("transform", "translate(" + (- rootBBox.x) + "," + (- rootBBox.y) + ")");
+            svgRoot.setAttribute("width", rootBBox.width);
+            svgRoot.setAttribute("height", rootBBox.height);
+
+            document.body.removeChild(renderContainer);
+
+            callback(renderContainer.firstChild);
+          }
+        };
+
+        computeLayout(0);
+      };
+      return createDiplomaticSvg;
+    })();
+
+    var createFacsimileOverlaySvg = (function(){
+      "use strict";
+      var createFacsimileOverlaySvg = function(diplomaticSvg, textImageLinkSvgString) {
+
+        var renderContainer = createRenderContainer();
+        document.body.appendChild(renderContainer);
+
+        // create dom nodes from text-image-link svg string
+        var textImageLinkSvg = new DOMParser().parseFromString(textImageLinkSvgString, "image/svg+xml").firstChild;
+        textImageLinkSvg.style.position = "absolute";
+        textImageLinkSvg.style.top = "0px";
+        textImageLinkSvg.style.left = "0px";
+        renderContainer.appendChild(textImageLinkSvg);
+
+        Array.prototype.slice.call(textImageLinkSvg.querySelectorAll(".imageannotationLine.imageannotationLinked")).forEach(function(lineNode) {
+          var heightFactor = 2;
+          var height = lineNode.getAttribute('height');
+          lineNode.setAttribute('height', height * heightFactor);
+          var y = lineNode.getAttribute('y');
+          lineNode.setAttribute('y', y - ((heightFactor * height) - height));
+
+          var linkedLine = lineNode.getAttributeNS("http://www.w3.org/1999/xlink", 'href');
+          var classVal = "linkedto-" + linkedLine.substring(1);
+          lineNode.setAttribute('class', lineNode.getAttribute('class') + ' ' + classVal);
+        });
+
+        var facsimileOverlaySvg = diplomaticSvg.cloneNode(true);
+        facsimileOverlaySvg.style.position = "absolute";
+        facsimileOverlaySvg.style.top = "0px";
+        facsimileOverlaySvg.style.left = "0px";
+        renderContainer.appendChild(facsimileOverlaySvg);
+
+        facsimileOverlaySvg.setAttribute("width", textImageLinkSvg.getAttribute("width"));
+        facsimileOverlaySvg.setAttribute("height", textImageLinkSvg.getAttribute("height"));
+
+        Array.prototype.slice.call(facsimileOverlaySvg.querySelectorAll(".element-line")).forEach(function(transcriptLine) {
+          var xmlId = SvgUtils.decodeClassValue(transcriptLine.getAttribute('class'), 'xmlId-');
+          var imageLinkLine = textImageLinkSvg.querySelector(".imageannotationLine.linkedto-" + xmlId);
+
+          if (imageLinkLine) {
+            SvgUtils.fitTo(transcriptLine, imageLinkLine);
+          } else {
+            transcriptLine.remove(true);
+          }
+
+        });
+        
+        document.body.removeChild(renderContainer);
+        facsimileOverlaySvg.style.position = "static";
+        facsimileOverlaySvg.style.top = "auto";
+        facsimileOverlaySvg.style.left = "auto";
+        return facsimileOverlaySvg ;
+      };
+
+      return createFacsimileOverlaySvg;
+    })();
+
+  </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script type="text/javascript" src="fillingThePage.js"></script>
+	<script type="text/javascript" src="rotate.js"></script>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+
+
+      svg {
+        stroke: black;
+        stroke-width: 0.5;
+        border: 1px solid black;
+      }
+
+    </style>
+    <script>
+
+
+
+      window.addEventListener("load", function() {
+
+
+        var fileSelector = document.getElementById("fileSelector");
+        fileSelector.addEventListener("change", function(){
+          var file;
+          var fileReader;
+
+          if(fileSelector.files.length === 1) {
+            file = fileSelector.files[0];
+            fileReader = new FileReader();
+            fileReader.addEventListener("load", function(loadEvent) {
+              var svgDoc = new DOMParser().parseFromString(loadEvent.target.result, "image/svg+xml");
+              var svg = svgDoc.querySelector("svg");
+              var navigation = document.getElementById("navigation");
+              var svgContent = document.getElementById("svgContent");
+              var ftp
+              var scaleFactor;
+
+              if(svg !== null) {
+
+                while(navigation.firstChild !== null) {
+                  navigation.removeChild(navigation.firstChild);
+                }
+
+                var buttonConfigs = [["|<<", function(){ftp.firstState();}], ["<", function(){ftp.decreaseState(1);}], [">", function(){ftp.increaseState(1);}], [">>|", function(){ftp.lastState();}]];
+
+                buttonConfigs.forEach(function(buttonConf) {
+                  var button = document.createElement("button");
+                  button.appendChild(document.createTextNode(buttonConf[0]));
+                  button.addEventListener("click", buttonConf[1]);
+                  navigation.appendChild(button);
+                });
+
+
+                while(svgContent.firstChild !== null) {
+                  svgContent.removeChild(svgContent.firstChild);
+                }
+
+                ftp = fillingThePage(svg);
+
+                svgContent.appendChild(svg);
+                scaleFactor = svgContent.clientWidth / parseInt(window.getComputedStyle(svg).width);
+                svgContent.style.transformOrigin = "left top";
+                svgContent.style.transform = "scale(" + scaleFactor + ", " + scaleFactor + ")";
+                svgContent.style.height = (parseInt(window.getComputedStyle(svg).height) * scaleFactor) + "px";
+                window.a = svgContent;
+
+              }
+            });
+            fileReader.readAsText(file);
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="fileSelection">
+      <input id="fileSelector" accept="image/svg+xml" type="file">
+    </div>
+    <div id="content">
+      <div id="navigation">
+      </div>
+      <div id="svgContent">
+      </div>
+    </div>
+  </body>
+</html>

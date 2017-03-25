@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="css/document-text.css">
+    <link rel="stylesheet" href="css/document-transcript.css">
+    <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
+    <link rel="stylesheet" href="css/document-transcript-interaction.css">
+    <link rel="stylesheet" href="css/pure-custom.css">
+    <link rel="stylesheet" href="css/basic_layout.css">
+
+    <script type="text/javascript" src="faust_structure.js"></script>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 5px;
+        background-color: lightgray;
+      }
+
+      #container {
+        border: 1px solid black;
+        background-color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    </div>
+  </body>
+  <script>
+
+    window.addEventListener("load", function(){
+      var docMetadataXhr = new XMLHttpRequest();
+      docMetadataXhr.open("GET", "./gsa_391098.xml", true);
+      docMetadataXhr.onreadystatechange = function () {
+        if(this.readyState === 4) {
+
+          container.appendChild(documentStructure.createFromXml(docMetadataXhr.responseXML));
+        }
+      };
+      docMetadataXhr.send(null);
+
+    });
+  </script>
+</html>

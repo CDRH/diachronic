@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -cp "./*" de.faustedition.transcript.simple.SimpleTransform < 0002.xml > 0002.json

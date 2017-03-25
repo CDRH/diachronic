@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script type="text/javascript" src="chessboard.js"></script>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+
+
+
+      .row-text {
+        font-family: Arial, Helvetica;
+        font-weight: 400;
+        font-size: 20pt;
+        font-style: normal;
+        text-anchor: end;
+        fill: black;
+      }
+
+      .column-text {
+        font-family: Arial, Helvetica;
+        font-weight: 400;
+        font-size: 20pt;
+/*        font-weight: bold;*/
+        font-style: normal;
+        text-anchor: start;
+        fill: black;
+      }
+
+      .tile {
+        stroke: black;
+        stroke-width: 0.5;
+      }
+
+      .untouched {
+        fill: white;
+      }
+
+      .inProgress {
+        fill: gray;
+      }
+
+      .finished {
+        fill: black;
+      }
+
+      .highlight {
+        opacity: 0;
+        fill: red;
+        fill-opacity: 0.25;
+        stroke: black;
+        stroke-width: 0.5;
+        stroke-opacity: 0.5;
+      }
+
+      .highlight:hover {
+        opacity: 1;
+      }
+
+    </style>
+    <script>
+      window.addEventListener("load", function() {
+
+        var data = {
+          rows: [
+                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
+                 ["inProgress", "untouched", "inProgress", "untouched", "finished"],
+                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
+                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
+                 ["inProgress", "untouched", "inProgress", "untouched", "finished"],
+                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
+                 ["inProgress", "untouched", "inProgress", "untouched", "finished"]
+                ],
+          rowLabels: ["asd", "asddas", "ascc", "cdf", "asddas", "ascc", "cdf"],
+          columnLabels: ["1: Telemachus", "2: Nestor", "ascc", "cdf", "sndon"]
+//          columnLabels: ["a", "s", "c", "f", "x"]
+        };
+
+        //var conf = {tile: {height: 200, width: 250, horizontalDistance: 50, verticalDistance: 80}};
+        var conf = {
+                    tile:      { height: 40, width: 22.5, horizontalDistance: 2.5, verticalDistance: 35 },
+                    highlight: { horizontalMargin: 2, verticalMargin: 2 },
+                    label:     { horizontal: { width: 75, offset: 27.5, gap: 10 },
+                                 vertical:   { height: 75, offset: 20, gap: 10 }
+                               },
+                    padding: 5
+                   };
+
+        var chessboard = createChessboard(data, conf);
+        console.log(chessboard);
+
+        var container = document.getElementById("container");
+        container.appendChild(chessboard);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+    </div>
+  </body>
+</html>
