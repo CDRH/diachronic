@@ -1,5 +1,0 @@
-Sample Encodings - Vriginia Woolf "A Sketch of the Past", Segment 5
-================
-This folder contains text genetic TEI sample encodings of the fifth segment of Virginia Woolf's autobiographical notes "A Sketch of the Past" (1939-41). For the given text fragment two wittnesses are available, a manuscript and a later typescript, both produced by the author.
-
-The sample encodings of this segment consist of (a) an encoding of the manuscript version including all inter-documentary revision campaigns and (b) a synoptic encoding, which contains both the manuscript and the typescript. This encoding is the result of the critical assessment of the collation of these two wittnesses with the aid of TUSTEP. It is extended by a diplomatic sourceDoc encoding of the manuscript to capture the zones for paragraphs, lines and interlinear additions/alterations. This diplomatic encoding is linked to the textual encoding via xml:id's.

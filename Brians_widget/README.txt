@@ -1,5 +1,0 @@
-Unzipping the file widget.zip will produce a directory called "widget" containing four files: diachronic.css, show-hide.js, uva.00256-v2-text.html, and uva.00256-v2-text.xml. Opening this last file in a browser will display the transcription incrementally, in the order that the editor has encoded within the <listChange> section of uva.00256-v2-text.xml (the TEI/XML source of the HTML file).
-
-Unzipping the file DiachronicMarkup.zip will create a directory named “DiachronicMarkup” with several subdirectories. If you open the subdirectory labelled “htmlOutput” you’ll find two HTML pages that you can open in a browser. 
-
-Adding other TEI files to this viewer is not too painful, though there is one important caveat: They must be marked up in precisely the same way as the sample files (which are in the “input” subdirectory). New files can be prepared for the viewer by placing them in the “input” directory and then running the shell script in the “sh” directory. The resulting HTML file will appear in the htmlOutput directory.
