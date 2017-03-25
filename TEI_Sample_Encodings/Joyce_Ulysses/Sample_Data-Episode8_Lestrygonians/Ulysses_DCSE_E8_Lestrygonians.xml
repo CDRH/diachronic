@@ -15,10 +15,13 @@
                 <editor role="philology" xml:id="crowley">Ronan Crowley</editor>
             </editionStmt>
             <publicationStmt>
-                <p>This electronic edition was created as part of a <term>Diplomarbeit</term> for
-                    the<rs>Technische Universität München</rs>. <emph>Note that the text and the
-                        edition are copyrighted and may not be distributed freely.</emph> The
-                    copyright notices of the printed edition still apply where applicable:</p>
+                <p>This TEI P5 encoding of Lestrygonians was created as part of the DFG/NEH funded project 
+                    <term>Diachronic Markup and Presentation Practices for Text Editions in Digital Research 
+                        Environments</term>. The data was migrated multiple times between 1986 and the present.
+                    The current version was produced by Gregor Middell, Joshua Schäuble, Ronan Crowley and 
+                    Claus Melchior from a TEI P4 version that resulted from Tobias Rischer's 
+                    <term>Diplomarbeit</term> for the<rs>Technische Universität München</rs>. 
+                    The copyright notices of the printed edition still apply where applicable:</p>
                 <p>Draft texts, revisional material, and reading text of <title>Ulysses</title>
                     ©<date>1984</date>, The Trustees of the Estate of James Joyce</p>
                 <p>Presentation of Genetic Synopsis, Notes and Afterword ©<date>1984</date>, Hans
