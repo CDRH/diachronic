@@ -15,7 +15,7 @@
       .row-text {
         font-family: Arial, Helvetica;
         font-weight: 400;
-        font-size: 20pt;
+        font-size: 10pt;
         font-style: normal;
         text-anchor: end;
         fill: black;
@@ -24,7 +24,7 @@
       .column-text {
         font-family: Arial, Helvetica;
         font-weight: 400;
-        font-size: 20pt;
+        font-size: 10pt;
 /*        font-weight: bold;*/
         font-style: normal;
         text-anchor: start;
@@ -64,19 +64,19 @@
     </style>
     <script>
       window.addEventListener("load", function() {
-
+		//this data is fictional!
         var data = {
           rows: [
-                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
-                 ["inProgress", "untouched", "inProgress", "untouched", "finished"],
-                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
-                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
-                 ["inProgress", "untouched", "inProgress", "untouched", "finished"],
-                 ["finished", "inProgress", "inProgress", "inProgress", "untouched"],
-                 ["inProgress", "untouched", "inProgress", "untouched", "finished"]
+                 ["untouched", "inProgress", "untouched", "inProgress", "untouched"],
+                 ["untouched", "inProgress", "untouched", "untouched", "finished"],
+                 ["inProgress", "inProgress", "untouched", "inProgress", "untouched"],
+                 ["inProgress", "inProgress", "untouched", "inProgress", "untouched"],
+                 ["inProgress", "finished", "inProgress", "untouched", "finished"],
+                 ["finished", "finished", "inProgress", "inProgress", "untouched"],
+                 ["finished", "finished", "finished", "untouched", "finished"]
                 ],
-          rowLabels: ["asd", "asddas", "ascc", "cdf", "asddas", "ascc", "cdf"],
-          columnLabels: ["1: Telemachus", "2: Nestor", "ascc", "cdf", "sndon"]
+          rowLabels: ["June 1919", "July 1919", "August 1919", "September 1919", "October 1919", "November 1919", "December 1919"],
+          columnLabels: ["1: Telemachus", "2: Nestor", "3: Proteus", "4: Calypso", "..."]
 //          columnLabels: ["a", "s", "c", "f", "x"]
         };
 
