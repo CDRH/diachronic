@@ -25,7 +25,6 @@
         font-family: Arial, Helvetica;
         font-weight: 400;
         font-size: 10pt;
-/*        font-weight: bold;*/
         font-style: normal;
         text-anchor: start;
         fill: black;
@@ -68,24 +67,24 @@
         var data = {
           rows: [
                  ["untouched", "inProgress", "untouched", "inProgress", "untouched"],
-                 ["untouched", "inProgress", "untouched", "untouched", "finished"],
-                 ["inProgress", "inProgress", "untouched", "inProgress", "untouched"],
-                 ["inProgress", "inProgress", "untouched", "inProgress", "untouched"],
-                 ["inProgress", "finished", "inProgress", "untouched", "finished"],
-                 ["finished", "finished", "inProgress", "inProgress", "untouched"],
-                 ["finished", "finished", "finished", "untouched", "finished"]
+                 ["untouched", "inProgress", "untouched", "finished", "untouched"],
+                 ["inProgress", "inProgress", "untouched", "finished", "untouched"],
+                 ["inProgress", "inProgress", "untouched", "finished", "inProgress"],
+                 ["inProgress", "finished", "inProgress", "finished", "inProgress"],
+                 ["finished", "finished", "inProgress", "finished", "finished"],
+                 ["finished", "finished", "finished", "finished", "finished"]
                 ],
           rowLabels: ["June 1919", "July 1919", "August 1919", "September 1919", "October 1919", "November 1919", "December 1919"],
-          columnLabels: ["1: Telemachus", "2: Nestor", "3: Proteus", "4: Calypso", "..."]
+          columnLabels: ["1: Telemachus", "2: Nestor", "3: Proteus", "4: Calypso", "5: ..."]
 //          columnLabels: ["a", "s", "c", "f", "x"]
         };
 
-        //var conf = {tile: {height: 200, width: 250, horizontalDistance: 50, verticalDistance: 80}};
+
         var conf = {
-                    tile:      { height: 40, width: 22.5, horizontalDistance: 2.5, verticalDistance: 35 },
+                    tile:      { height: 40, width: 22.5, horizontalDistance: 2.5, verticalDistance: 20 },
                     highlight: { horizontalMargin: 2, verticalMargin: 2 },
-                    label:     { horizontal: { width: 75, offset: 27.5, gap: 10 },
-                                 vertical:   { height: 75, offset: 20, gap: 10 }
+                    label:     { horizontal: { width: 100, offset: 25, gap: 5 },
+                                 vertical:   { height: 110, offset: 20, gap: 5 }
                                },
                     padding: 5
                    };
